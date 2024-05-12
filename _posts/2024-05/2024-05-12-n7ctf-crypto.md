@@ -12,6 +12,7 @@ in this crypto challenge we get two files message.py nad output.py
 
 # analyse the source code
 this is the encrypt function:
+
 	`def encrypt(message, key):
 	    encrypted_message = ""
 	    key_index = 0
@@ -24,6 +25,7 @@ this is the encrypt function:
 `
 
 and this key funct:
+
 	`def generate_key(length):
     key = ""
     for _ in range(length):
@@ -31,6 +33,7 @@ and this key funct:
     return key`
 
 # get the flag
+
 so the encryption adds 0 or 1 to the ord(message_char)
 
 if 0 is added the character is not changed 
@@ -50,20 +53,26 @@ for char in flag:
         print(message)`
 
 Decrypted (Key 11111111111111111111111): 
+
 hsrehtherzdrnoqsetqagon
+
 Decrypted (Key 00000000000000000000000): 
+
 itsfiuifs{esoprtfurbhpo
 
 since they give us english plaintext we can just try to get the correct flag 
 
 itsfiuifs{esoprtfurbhpo
+
 hsrehtherzdrnoqsetqagon
 
 we get in result: 
 # itseitherzeroortetargon
 
 # key
+
 for the key we can just compare betwen the flag and the ecnrypted text
+
 itsfiuifs{esoprtfurbhpo
 hsrehtherzdrnoqsetqagon
 
@@ -81,4 +90,6 @@ e = 3
 n = 105685955572725005347272960743239621411993077386863604096770961745412000510196377797206820581777171869540729112886024112689923030604026133879334659352568724562364148963053997247996020334986347187697178849374917417289646475949679535200176152455407176055260974820531493339297291633199170870295476113587842624831
 
 we get the flag
-# N7-CTF{just_s1mple_m3th_765622}
+
+# flag:
+  N7-CTF{just_s1mple_m3th_765622}
