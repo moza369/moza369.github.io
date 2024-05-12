@@ -37,11 +37,11 @@ so now we have a photo
 lets use some stego tools 
 i use stegsolve.jar 
 
-1- java -jar stegsolve.jar
+1- `java -jar stegsolve.jar`.
 
-2- opne the photo
+2- open the photo. 
 
-3- find the flag 
+3- find the flag.
 
 # flag:
   N7-CTF{ju57_w4n73d_70 w4573_y0ur_71m3} 
