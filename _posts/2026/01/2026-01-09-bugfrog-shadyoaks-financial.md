@@ -6,7 +6,7 @@ tags: [bugfrog, jwt, web, writeup]
 author: moza
 ---
 
-## 🔍 Challenge Overview
+##  Challenge Overview
 
 The **Shady Oaks Financial** application provides a login and registration page.
 After registering a normal user account, the application issues a **JWT token** that is stored in the browser.
@@ -15,7 +15,7 @@ The goal of this challenge is to escalate privileges and gain **admin access**.
 
 ---
 
-## 🧪 Initial Access
+##  Initial Access
 
 We begin by creating a normal user account using the registration page and logging in successfully.
 
@@ -38,7 +38,7 @@ This token appears to be used for authentication and authorization.
 
 ---
 
-## 🔓 JWT Decoding
+##  JWT Decoding
 
 Decoding the JWT reveals the following payload:
 
@@ -59,7 +59,7 @@ From this, we can observe:
 
 ---
 
-## ⚙️ JWT Manipulation (alg = none)
+##  JWT Manipulation (alg = none)
 
 We attempt to escalate privileges by modifying the JWT:
 
@@ -76,7 +76,7 @@ After testing this token, **admin access is still denied**.
 
 ---
 
-## 🧠 Further Analysis
+##  Further Analysis
 
 Since the role change alone was not sufficient, we suspect that the application may also validate the **user ID**.
 
@@ -110,7 +110,7 @@ Successfully reveals the **flag**.
 
 ---
 
-## 🛡️ Root Cause
+##  Root Cause
 
 * JWT signature is not properly validated
 * `alg: none` is accepted
@@ -118,7 +118,7 @@ Successfully reveals the **flag**.
 
 ---
 
-## 🧠 Lessons Learned
+##  Lessons Learned
 
 * Never trust JWT data without server-side verification
 * Always enforce strong signature validation
