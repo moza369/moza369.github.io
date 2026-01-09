@@ -1,8 +1,8 @@
 ---
-title: "BugFrog-Shady Oaks Financial – admin jwt "
+title: "BugForge-Shady Oaks Financial – admin jwt "
 date: 2026-01-09
-categories: [BugFrog]
-tags: [bugfrog, jwt, web, writeup]
+categories: [BugForge]
+tags: [bugforge, jwt, web, writeup]
 author: moza
 ---
 
