@@ -1,16 +1,19 @@
 ---
-title: "BugForge-Shady Ottergram – graphql idor "
+title: "BugForge-Shady Ottergram – Graphql IDOR "
 date: 2026-01-10
 categories: [BugForge]
 tags: [bugforge, graphql, web, writeup]
-author: moza
+author: moza369
 ---
 
 # Ottergram – Web Challenge Writeup
 
 **Challenge Name:** Ottergram
+
 **Difficulty:** Easy
+
 **Category:** Web
+
 **Hint Provided:** GraphQL
 
 ---
