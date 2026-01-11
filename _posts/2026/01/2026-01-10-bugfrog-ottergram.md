@@ -1,5 +1,5 @@
 ---
-title: "BugForge-Shady Ottergram – Graphql IDOR "
+title: "BugForge-Ottergram – Graphql IDOR "
 date: 2026-01-10
 categories: [BugForge]
 tags: [bugforge, graphql, web, writeup]
