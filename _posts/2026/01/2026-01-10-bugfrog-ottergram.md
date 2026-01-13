@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 title: "BugForge-Ottergram – Graphql IDOR "
+=======
+title: "BugForge-Ottergram – graphql idor "
+>>>>>>> fe79f2e (New wirteup day 13)
 date: 2026-01-10
 categories: [BugForge]
 tags: [bugforge, graphql, web, writeup]
