@@ -18,8 +18,9 @@ author: moza
 **First Blood:** moza369 🩸  
 
 ---
+![login Page](/assets/img/bugfrog/tunaki/login-page.png)
 
-## 🧠 Challenge Overview
+## Challenge Overview
 
 Tanuki Scope is a daily web challenge that simulates a small learning platform.  
 The application allows users to **register and log in**, then study different decks such as *Technology* and *Linux Trivia*.
@@ -35,19 +36,21 @@ The objective was to identify a vulnerability that leads to the flag.
 
 ---
 
-## 🔍 Initial Recon
+##  Initial Recon
 
 After logging in, the app greets the user with:
 
-![login Page](/assets/img/bugfrog/tunaki/login-page.png)
+
 
 > *Welcome back, moza!*  
 > *Choose a deck to start studying*
 
+![dashboard Page](/assets/img/bugfrog/tunaki/dashboard-page.png)
+
 Nothing unusual at first glance.  
 So the next step was to **open Burp Suite** and monitor the traffic while navigating through the dashboard and stats sections.
 
-![dashboard Page](/assets/img/bugfrog/tunaki/dashboard-page.png)
+
 
 ![explore Page](/assets/img/bugfrog/tunaki/explore-page.png)
 
@@ -69,14 +72,14 @@ This was a classic sign of a potential Insecure Direct Object Reference (IDOR) v
 
 
 ---
-## 🔓 Exploitation (IDOR)
+### Exploitation (IDOR)
 
 To test this, I manually modified the request in Burp:
-```
+```http
 GET /api/stats/1 HTTP/2
 ```
 
-### 🎯 Result
+### Result
 
 The server responded successfully and returned another user’s data — including the *flag*.
 
@@ -88,14 +91,14 @@ The server responded successfully and returned another user’s data — includi
   "sessions_this_week": 0,
   "cards_studied_this_week": 0,
   "achievement_flag": "bug{FLAG_HERE}"
-
+}
 ```
 No authorization checks. No validation. Just pure IDOR.
 
 ![idor Page](/assets/img/bugfrog/tunaki/idor-page.png)
 
 ---
-## 🧩 Root Cause
+## Root Cause
 
 The `/api/stats/:id` endpoint trusted user-supplied input and failed to verify whether the authenticated user was authorized to access the requested object.
 
@@ -108,7 +111,7 @@ This allowed any logged-in user to:
 - Retrieve sensitive information
 
 ---
-## 🛡️ Takeaways
+##  Takeaways
 
 - IDOR vulnerabilities are simple but powerful
 
@@ -122,5 +125,5 @@ This allowed any logged-in user to:
 A clean and straightforward challenge with a textbook IDOR vulnerability.
 Managed to grab **First Blood** 🩸 on this one — always a good feeling.
 
-Happy hacking 🚀
+Happy hacking 
 — moza369
