@@ -1,4 +1,5 @@
-  name: "Build and Deploy Hugo"
+name: "Build and Deploy Hugo"
+
 on:
   push:
     branches:
@@ -21,14 +22,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive  # Crucial for pulling the Reimu theme
+          submodules: recursive
           fetch-depth: 0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
-          extended: true         # Required for your blue-themed SCSS
+          extended: true
 
       - name: Build site
         run: hugo --minify
@@ -36,4 +37,15 @@ jobs:
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public         # Hugo's output folder
+          path: ./public
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
