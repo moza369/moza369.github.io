@@ -3,6 +3,7 @@ title: N7 CTF STEGO
 time: 2024-05-12 
 categories: [ctf]
 tags: [steganography]
+cover: /images/cover.jpeg
 ---
 
 # stego 1

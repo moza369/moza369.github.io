@@ -3,6 +3,7 @@ title: "Are We Safe When Registering on University Websites?"
 date: 2025-08-05
 layout: post
 tags: [security, education, awareness, student-privacy]
+cover: /images/cover.jpeg
 ---
 
 Every year, thousands of students register for schools and universities through online platforms. These websites often request a lot of personal information, including:

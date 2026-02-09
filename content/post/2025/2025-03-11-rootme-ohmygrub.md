@@ -3,6 +3,7 @@ title: Oh My Grub root-me
 time: 2025-03-11
 categories: [ctf]
 tags: [forensics]
+cover: /images/cover.jpeg
 ---
 
 

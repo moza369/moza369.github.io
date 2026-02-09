@@ -4,6 +4,7 @@ date: 2026-01-10
 categories: [BugForge]
 tags: [bugforge, graphql, web, writeup]
 author: moza369
+cover: /images/cover.jpeg
 ---
 
 # Ottergram – Web Challenge Writeup

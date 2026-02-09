@@ -3,6 +3,7 @@ title: Master kee root-me
 time: 2025-03-16
 categories: [ctf]
 tags: [forensics]
+cover: /images/cover.jpeg
 ---
 
 # Cracking the MasterKee Challenge: Exploiting CVE-2023-32784

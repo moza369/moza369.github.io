@@ -3,6 +3,7 @@ title: N7 CTF CRYPTO
 time: 2024-05-12 
 categories: [ctf]
 tags: [crypto]
+cover: /images/cover.jpeg
 ---
 
 ### First challenge

@@ -4,6 +4,7 @@ date: 2026-01-13
 categories: [BugForge]
 tags: [bugforge, idor, web, writeup]
 author: moza
+cover: /images/cover.jpeg
 ---
 
 

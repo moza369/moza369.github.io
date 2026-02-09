@@ -4,6 +4,7 @@ date: 2026-01-09
 categories: [BugForge]
 tags: [bugforge, jwt, web, writeup]
 author: moza
+cover: /images/cover.jpeg
 ---
 
 ##  Challenge Overview
