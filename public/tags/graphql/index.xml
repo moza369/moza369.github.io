@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Graphql on Moza Blog</title>
+    <link>http://localhost:1313/tags/graphql/</link>
+    <description>Recent content from Moza Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    
+    <managingEditor>zahirmohamed687@gmail.com (Mohamed Zahir)</managingEditor>
+    <webMaster>zahirmohamed687@gmail.com (Mohamed Zahir)</webMaster>
+    
+    <copyright>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</copyright>
+    
+    <lastBuildDate>Sat, 10 Jan 2026 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="http://localhost:1313/tags/graphql/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+    
+
+    <item>
+      <title>BugForge- Ottergram – graphql idor </title>
+      <link>http://localhost:1313/post/2026/01/2026-01-10-bugfrog-ottergram/</link>
+      <pubDate>Sat, 10 Jan 2026 00:00:00 &#43;0000</pubDate>
+      <author>zahirmohamed687@gmail.com (Mohamed Zahir)</author>
+      <guid>http://localhost:1313/post/2026/01/2026-01-10-bugfrog-ottergram/</guid>
+      <description>
+        <![CDATA[<h1>BugForge- Ottergram – graphql idor </h1><p>Author: Mohamed Zahir(zahirmohamed687@gmail.com)</p>
+        
+          <h1 id="ottergram--web-challenge-writeup">
+<a class="header-anchor" href="#ottergram--web-challenge-writeup"></a>
+Ottergram – Web Challenge Writeup
+</h1><p><strong>Challenge Name:</strong> Ottergram</p>
+<p><strong>Difficulty:</strong> Easy</p>
+<p><strong>Category:</strong> Web</p>
+<p><strong>Hint Provided:</strong> GraphQL</p>
+<hr>
+<h2 id="challenge-overview">
+<a class="header-anchor" href="#challenge-overview"></a>
+Challenge Overview
+</h2><p>The challenge provides a web application called <strong>Ottergram</strong>. The given hint strongly suggests that the vulnerability lies within a <strong>GraphQL endpoint</strong>.</p>
+<p>The application scope allows access to all paths under:</p>
+<pre tabindex="0"><code>https://&lt;lab-id&gt;.labs-app.bugforge.io/*
+</code></pre><p><img src="/images/challenges/bugfrog/ottergram/main-page.png" alt="Main Page"></p>
+<hr>
+<h2 id="initial-reconnaissance">
+<a class="header-anchor" href="#initial-reconnaissance"></a>
+Initial Reconnaissance
+</h2><p>While exploring the application, I tested common GraphQL endpoints and discovered that the following endpoint was accessible:</p>
+        
+        <hr><p>Published on 2026-01-10 at <a href='http://localhost:1313/'>Moza Blog</a>, last modified on 2026-01-10</p>]]>
+      </description>
+      
+        <category>BugForge</category>
+      
+    </item>
+    
+  </channel>
+</rss>

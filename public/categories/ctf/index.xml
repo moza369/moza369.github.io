@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ctf on Moza Blog</title>
+    <link>http://localhost:1313/categories/ctf/</link>
+    <description>Recent content from Moza Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    
+    <managingEditor>zahirmohamed687@gmail.com (Mohamed Zahir)</managingEditor>
+    <webMaster>zahirmohamed687@gmail.com (Mohamed Zahir)</webMaster>
+    
+    <copyright>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</copyright>
+    
+    
+    <atom:link href="http://localhost:1313/categories/ctf/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+    
+
+    <item>
+      <title>Oh My Grub root-me</title>
+      <link>http://localhost:1313/post/2025/2025-03-11-rootme-ohmygrub/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+      <author>zahirmohamed687@gmail.com (Mohamed Zahir)</author>
+      <guid>http://localhost:1313/post/2025/2025-03-11-rootme-ohmygrub/</guid>
+      <description>
+        <![CDATA[<h1>Oh My Grub root-me</h1><p>Author: Mohamed Zahir(zahirmohamed687@gmail.com)</p>
+        
+          <h1 id="analyzing-an-ova-file-to-retrieve-login-credentials">
+<a class="header-anchor" href="#analyzing-an-ova-file-to-retrieve-login-credentials"></a>
+Analyzing an OVA File to Retrieve Login Credentials
+</h1><p>In this challenge, we are given an OVA (Open Virtualization Appliance) file. The goal is to analyze the file and retrieve the login credentials required to access the virtual machine. Here&rsquo;s how I approached the problem:</p>
+<hr>
+<h2 id="step-1-extracting-files-from-the-ova-file">
+<a class="header-anchor" href="#step-1-extracting-files-from-the-ova-file"></a>
+Step 1: Extracting Files from the OVA File
+</h2><p>The OVA file is essentially a tarball, so we can extract its contents using the <code>tar</code> command:</p>
+        
+        <hr><p>Published on 0001-01-01 at <a href='http://localhost:1313/'>Moza Blog</a>, last modified on 0001-01-01</p>]]>
+      </description>
+      
+        <category>ctf</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>N7 CTF WEB</title>
+      <link>http://localhost:1313/post/2024-05/2024-05-12-n7ctf-web/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+      <author>zahirmohamed687@gmail.com (Mohamed Zahir)</author>
+      <guid>http://localhost:1313/post/2024-05/2024-05-12-n7ctf-web/</guid>
+      <description>
+        <![CDATA[<h1>N7 CTF WEB</h1><p>Author: Mohamed Zahir(zahirmohamed687@gmail.com)</p>
+        
+          <h2 id="web">
+<a class="header-anchor" href="#web"></a>
+web:
+</h2><p>in the login page when we try admin:admin we see that we cant use this username</p>
+<p>when we try something like guess:guess show us that the username small so we need a longer one i try</p>
+<p>username:
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+<p>password:
+admin</p>
+<p>now is login but we are not an admin lets check the cookies.</p>
+<p>we find there is a jwt created :</p>
+<p><code>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUEiLCJwYXNzd29yZCI6ImFkbWluIiwiaWF0IjoxNzE1NDI2NDYzLCJleHAiOjE3MTU0MzAwNjN9.ZO7Ir6SKwBEkpB8EY7isb0nDsjpnCjPfh2AXAaYfRZ4 </code></p>
+<p>lets go to crack it using hashcat</p>
+        
+        <hr><p>Published on 0001-01-01 at <a href='http://localhost:1313/'>Moza Blog</a>, last modified on 0001-01-01</p>]]>
+      </description>
+      
+        <category>ctf</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>N7 CTF STEGO</title>
+      <link>http://localhost:1313/post/2024-05/2024-05-12-n7ctf-steganography/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+      <author>zahirmohamed687@gmail.com (Mohamed Zahir)</author>
+      <guid>http://localhost:1313/post/2024-05/2024-05-12-n7ctf-steganography/</guid>
+      <description>
+        <![CDATA[<h1>N7 CTF STEGO</h1><p>Author: Mohamed Zahir(zahirmohamed687@gmail.com)</p>
+        
+          <h1 id="stego-1">
+<a class="header-anchor" href="#stego-1"></a>
+stego 1
+</h1><p>we have this paragraph:</p>
+<pre><code>`Capture the Flag (CTF) in computer security is an exercise in which participants attempt to find text strings, called &quot;flags&quot;, which are secretly hidden in purposefully-vulnerable programs or websites. They can be used for both competitive or educational purposes. In two main variations of CTFs, participants either steal flags from other participants (attack/defense-style CTFs) or from organizers (jeopardy-style challenges). A mixed competition combines these two styles.[1] Competitions can include hiding flags in hardware devices, they can be both online or in-person, and can be advanced or entry-level. The game is inspired by the traditional outdoor sport of the same name.`
+</code></pre>
+<p>in the description of this challenge they say something about zipf&rsquo;s law
+but the main idea is to calculate the frequency of the repeated caracters</p>
+        
+        <hr><p>Published on 0001-01-01 at <a href='http://localhost:1313/'>Moza Blog</a>, last modified on 0001-01-01</p>]]>
+      </description>
+      
+        <category>ctf</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>N7 CTF REV</title>
+      <link>http://localhost:1313/post/2024-05/2024-05-12-n7ctf-rev/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+      <author>zahirmohamed687@gmail.com (Mohamed Zahir)</author>
+      <guid>http://localhost:1313/post/2024-05/2024-05-12-n7ctf-rev/</guid>
+      <description>
+        <![CDATA[<h1>N7 CTF REV</h1><p>Author: Mohamed Zahir(zahirmohamed687@gmail.com)</p>
+        
+          <h1 id="rev">
+<a class="header-anchor" href="#rev"></a>
+rev
+</h1><p>i use ghidra to analyse the file.</p>
+<p>we find the hooks.</p>
+<p>after some research i find this script to decrypt theme</p>
+<pre><code>`hooks = [0x9D, 0x94, 0xAF, 0xB2, 0xBD, 0xB2, 0xA1, 0xB4, 0xB7, 0xB1, 0xBD, 0xB9, 0xB3, 0xB6, 0xAB, 0xAB, 0xBB, 0xB4, 0xB5, 0x9E, 0x98, 0x8F, 0x98, 0x89, 0x57, 0x66, 0x40, 0x6C, 0x6A, 0x50, 0x6D, 0x92, 0x73, 0x97, 0x50, 0x87, 0x87, 0x76, 0x77, 0x7F, 0x77, 0x67, 0x78, 0x71, 0x4F, 0x61, 0x72, 0x6B, 0x66, 0x7B, 0x43]
+
+reverse_string = &quot;&quot;
+
+hooks = hooks[::-1]
+for i in range(51):
+    char = (hooks[i] ^ i) - i
+    reverse_string += chr(char)
+</code></pre>
+<p>`</p>
+        
+        <hr><p>Published on 0001-01-01 at <a href='http://localhost:1313/'>Moza Blog</a>, last modified on 0001-01-01</p>]]>
+      </description>
+      
+        <category>ctf</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>N7 CTF CRYPTO</title>
+      <link>http://localhost:1313/post/2024-05/2024-05-12-n7ctf-crypto/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+      <author>zahirmohamed687@gmail.com (Mohamed Zahir)</author>
+      <guid>http://localhost:1313/post/2024-05/2024-05-12-n7ctf-crypto/</guid>
+      <description>
+        <![CDATA[<h1>N7 CTF CRYPTO</h1><p>Author: Mohamed Zahir(zahirmohamed687@gmail.com)</p>
+        
+          <h3 id="first-challenge">
+<a class="header-anchor" href="#first-challenge"></a>
+First challenge
+</h3><p>in this crypto challenge we get two files message.py nad output.py</p>
+<h1 id="analyse-the-source-code">
+<a class="header-anchor" href="#analyse-the-source-code"></a>
+analyse the source code
+</h1><p>this is the encrypt function:</p>
+<pre><code>`def encrypt(message, key):
+    encrypted_message = &quot;&quot;
+    key_index = 0
+    for char in message:
+        key_value = int(key[key_index])
+        encrypted_char = chr(ord(char) + key_value)
+        encrypted_message += encrypted_char
+        key_index = (key_index + 1) % len(key)
+    return encrypted_message
+</code></pre>
+<p>`</p>
+<p>and this key funct:</p>
+<pre><code>`def generate_key(length):
+key = &quot;&quot;
+for _ in range(length):
+    key += str(random.randint(0, 1))
+return key`
+</code></pre>
+<h1 id="get-the-flag">
+<a class="header-anchor" href="#get-the-flag"></a>
+get the flag
+</h1><p>so the encryption adds 0 or 1 to the ord(message_char)</p>
+        
+        <hr><p>Published on 0001-01-01 at <a href='http://localhost:1313/'>Moza Blog</a>, last modified on 0001-01-01</p>]]>
+      </description>
+      
+        <category>ctf</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>Master kee root-me</title>
+      <link>http://localhost:1313/post/2025/2025-03-16-rootme-masterkee/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+      <author>zahirmohamed687@gmail.com (Mohamed Zahir)</author>
+      <guid>http://localhost:1313/post/2025/2025-03-16-rootme-masterkee/</guid>
+      <description>
+        <![CDATA[<h1>Master kee root-me</h1><p>Author: Mohamed Zahir(zahirmohamed687@gmail.com)</p>
+        
+          <h1 id="cracking-the-masterkee-challenge-exploiting-cve-2023-32784">
+<a class="header-anchor" href="#cracking-the-masterkee-challenge-exploiting-cve-2023-32784"></a>
+Cracking the MasterKee Challenge: Exploiting CVE-2023-32784
+</h1><p>For this challenge, we are provided with two files:</p>
+<ul>
+<li><code>MasterKee.DMP</code></li>
+<li><code>Masterkee.kdbx</code></li>
+</ul>
+<p>The goal is to extract the password from the <code>.DMP</code> file and use it to unlock the KeePass database (<code>Masterkee.kdbx</code>). After some research, I discovered that a specific version of KeePass is vulnerable to <strong>CVE-2023-32784</strong>, which allows extracting the master password from a memory dump.</p>
+<hr>
+<h2 id="step-1-understanding-the-vulnerability">
+<a class="header-anchor" href="#step-1-understanding-the-vulnerability"></a>
+Step 1: Understanding the Vulnerability
+</h2><p>CVE-2023-32784 is a vulnerability in KeePass that leaks portions of the master password in memory. By analyzing a memory dump (<code>.DMP</code>), we can recover parts of the password. The missing characters are represented as <code>●</code> in the output.</p>
+        
+        <hr><p>Published on 0001-01-01 at <a href='http://localhost:1313/'>Moza Blog</a>, last modified on 0001-01-01</p>]]>
+      </description>
+      
+        <category>ctf</category>
+      
+    </item>
+    
+  </channel>
+</rss>

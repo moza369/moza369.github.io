@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Steganography on Moza Blog</title>
+    <link>http://localhost:1313/tags/steganography/</link>
+    <description>Recent content from Moza Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    
+    <managingEditor>zahirmohamed687@gmail.com (Mohamed Zahir)</managingEditor>
+    <webMaster>zahirmohamed687@gmail.com (Mohamed Zahir)</webMaster>
+    
+    <copyright>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</copyright>
+    
+    
+    <atom:link href="http://localhost:1313/tags/steganography/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+    
+
+    <item>
+      <title>N7 CTF STEGO</title>
+      <link>http://localhost:1313/post/2024-05/2024-05-12-n7ctf-steganography/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+      <author>zahirmohamed687@gmail.com (Mohamed Zahir)</author>
+      <guid>http://localhost:1313/post/2024-05/2024-05-12-n7ctf-steganography/</guid>
+      <description>
+        <![CDATA[<h1>N7 CTF STEGO</h1><p>Author: Mohamed Zahir(zahirmohamed687@gmail.com)</p>
+        
+          <h1 id="stego-1">
+<a class="header-anchor" href="#stego-1"></a>
+stego 1
+</h1><p>we have this paragraph:</p>
+<pre><code>`Capture the Flag (CTF) in computer security is an exercise in which participants attempt to find text strings, called &quot;flags&quot;, which are secretly hidden in purposefully-vulnerable programs or websites. They can be used for both competitive or educational purposes. In two main variations of CTFs, participants either steal flags from other participants (attack/defense-style CTFs) or from organizers (jeopardy-style challenges). A mixed competition combines these two styles.[1] Competitions can include hiding flags in hardware devices, they can be both online or in-person, and can be advanced or entry-level. The game is inspired by the traditional outdoor sport of the same name.`
+</code></pre>
+<p>in the description of this challenge they say something about zipf&rsquo;s law
+but the main idea is to calculate the frequency of the repeated caracters</p>
+        
+        <hr><p>Published on 0001-01-01 at <a href='http://localhost:1313/'>Moza Blog</a>, last modified on 0001-01-01</p>]]>
+      </description>
+      
+        <category>ctf</category>
+      
+    </item>
+    
+  </channel>
+</rss>

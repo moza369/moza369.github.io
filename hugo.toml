@@ -1,0 +1,4 @@
+baseURL = 'https://moza369.github.io/'
+languageCode = 'en-us'
+title = 'Moza Blog'
+theme = "reimu"

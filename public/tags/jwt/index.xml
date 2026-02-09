@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jwt on Moza Blog</title>
+    <link>http://localhost:1313/tags/jwt/</link>
+    <description>Recent content from Moza Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    
+    <managingEditor>zahirmohamed687@gmail.com (Mohamed Zahir)</managingEditor>
+    <webMaster>zahirmohamed687@gmail.com (Mohamed Zahir)</webMaster>
+    
+    <copyright>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</copyright>
+    
+    <lastBuildDate>Fri, 09 Jan 2026 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="http://localhost:1313/tags/jwt/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+    
+
+    <item>
+      <title>BugForge-Shady Oaks Financial – admin jwt </title>
+      <link>http://localhost:1313/post/2026/01/2026-01-09-bugfrog-shadyoaks-financial/</link>
+      <pubDate>Fri, 09 Jan 2026 00:00:00 &#43;0000</pubDate>
+      <author>zahirmohamed687@gmail.com (Mohamed Zahir)</author>
+      <guid>http://localhost:1313/post/2026/01/2026-01-09-bugfrog-shadyoaks-financial/</guid>
+      <description>
+        <![CDATA[<h1>BugForge-Shady Oaks Financial – admin jwt </h1><p>Author: Mohamed Zahir(zahirmohamed687@gmail.com)</p>
+        
+          <h2 id="challenge-overview">
+<a class="header-anchor" href="#challenge-overview"></a>
+Challenge Overview
+</h2><p>The <strong>Shady Oaks Financial</strong> application provides a login and registration page.
+After registering a normal user account, the application issues a <strong>JWT token</strong> that is stored in the browser.</p>
+<p>The goal of this challenge is to escalate privileges and gain <strong>admin access</strong>.</p>
+<hr>
+<h2 id="initial-access">
+<a class="header-anchor" href="#initial-access"></a>
+Initial Access
+</h2><p>We begin by creating a normal user account using the registration page and logging in successfully.</p>
+<p><img src="/images/challenges/bugfrog/shadyoaks-financial/loginpage.png" alt="Login Page"></p>
+<p><img src="/images/challenges/bugfrog/shadyoaks-financial/register.png" alt="Register Page"></p>
+<p>After logging in, we inspect the browser’s <strong>Local Storage</strong> and notice a JWT token:</p>
+        
+        <hr><p>Published on 2026-01-09 at <a href='http://localhost:1313/'>Moza Blog</a>, last modified on 2026-01-09</p>]]>
+      </description>
+      
+        <category>BugForge</category>
+      
+    </item>
+    
+  </channel>
+</rss>

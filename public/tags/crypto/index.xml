@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Crypto on Moza Blog</title>
+    <link>http://localhost:1313/tags/crypto/</link>
+    <description>Recent content from Moza Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    
+    <managingEditor>zahirmohamed687@gmail.com (Mohamed Zahir)</managingEditor>
+    <webMaster>zahirmohamed687@gmail.com (Mohamed Zahir)</webMaster>
+    
+    <copyright>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</copyright>
+    
+    
+    <atom:link href="http://localhost:1313/tags/crypto/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+    
+
+    <item>
+      <title>N7 CTF CRYPTO</title>
+      <link>http://localhost:1313/post/2024-05/2024-05-12-n7ctf-crypto/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+      <author>zahirmohamed687@gmail.com (Mohamed Zahir)</author>
+      <guid>http://localhost:1313/post/2024-05/2024-05-12-n7ctf-crypto/</guid>
+      <description>
+        <![CDATA[<h1>N7 CTF CRYPTO</h1><p>Author: Mohamed Zahir(zahirmohamed687@gmail.com)</p>
+        
+          <h3 id="first-challenge">
+<a class="header-anchor" href="#first-challenge"></a>
+First challenge
+</h3><p>in this crypto challenge we get two files message.py nad output.py</p>
+<h1 id="analyse-the-source-code">
+<a class="header-anchor" href="#analyse-the-source-code"></a>
+analyse the source code
+</h1><p>this is the encrypt function:</p>
+<pre><code>`def encrypt(message, key):
+    encrypted_message = &quot;&quot;
+    key_index = 0
+    for char in message:
+        key_value = int(key[key_index])
+        encrypted_char = chr(ord(char) + key_value)
+        encrypted_message += encrypted_char
+        key_index = (key_index + 1) % len(key)
+    return encrypted_message
+</code></pre>
+<p>`</p>
+<p>and this key funct:</p>
+<pre><code>`def generate_key(length):
+key = &quot;&quot;
+for _ in range(length):
+    key += str(random.randint(0, 1))
+return key`
+</code></pre>
+<h1 id="get-the-flag">
+<a class="header-anchor" href="#get-the-flag"></a>
+get the flag
+</h1><p>so the encryption adds 0 or 1 to the ord(message_char)</p>
+        
+        <hr><p>Published on 0001-01-01 at <a href='http://localhost:1313/'>Moza Blog</a>, last modified on 0001-01-01</p>]]>
+      </description>
+      
+        <category>ctf</category>
+      
+    </item>
+    
+  </channel>
+</rss>

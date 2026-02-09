@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Idor on Moza Blog</title>
+    <link>http://localhost:1313/tags/idor/</link>
+    <description>Recent content from Moza Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    
+    <managingEditor>zahirmohamed687@gmail.com (Mohamed Zahir)</managingEditor>
+    <webMaster>zahirmohamed687@gmail.com (Mohamed Zahir)</webMaster>
+    
+    <copyright>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</copyright>
+    
+    <lastBuildDate>Tue, 13 Jan 2026 00:00:00 +0000</lastBuildDate>
+    
+    
+    <atom:link href="http://localhost:1313/tags/idor/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+    
+
+    <item>
+      <title>BugForge- Tanuki – idor</title>
+      <link>http://localhost:1313/post/2026/01/2026-01-13-bugfrog-tanuki/</link>
+      <pubDate>Tue, 13 Jan 2026 00:00:00 &#43;0000</pubDate>
+      <author>zahirmohamed687@gmail.com (Mohamed Zahir)</author>
+      <guid>http://localhost:1313/post/2026/01/2026-01-13-bugfrog-tanuki/</guid>
+      <description>
+        <![CDATA[<h1>BugForge- Tanuki – idor</h1><p>Author: Mohamed Zahir(zahirmohamed687@gmail.com)</p>
+        
+          <h1 id="-first-blood-writeup--tanuki-scope-daily-challenge">
+<a class="header-anchor" href="#-first-blood-writeup--tanuki-scope-daily-challenge"></a>
+🩸 First Blood Writeup – Tanuki Scope (Daily Challenge)
+</h1><p><strong>Challenge Name:</strong> Tanuki Scope<br>
+<strong>Difficulty:</strong> Easy<br>
+<strong>Points:</strong> 10<br>
+<strong>Category:</strong> Web / IDOR<br>
+<strong>Status:</strong> ✅ Solved<br>
+<strong>First Blood:</strong> moza369 🩸</p>
+<hr>
+<p><img src="/images/challenges/bugfrog/tunaki/login-page.png" alt="login Page"></p>
+<h2 id="challenge-overview">
+<a class="header-anchor" href="#challenge-overview"></a>
+Challenge Overview
+</h2><p>Tanuki Scope is a daily web challenge that simulates a small learning platform.<br>
+The application allows users to <strong>register and log in</strong>, then study different decks such as <em>Technology</em> and <em>Linux Trivia</em>.</p>
+<p>After logging in, the dashboard displays progress information like:</p>
+        
+        <hr><p>Published on 2026-01-13 at <a href='http://localhost:1313/'>Moza Blog</a>, last modified on 2026-01-13</p>]]>
+      </description>
+      
+        <category>BugForge</category>
+      
+    </item>
+    
+  </channel>
+</rss>

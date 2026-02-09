@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Forensics on Moza Blog</title>
+    <link>http://localhost:1313/tags/forensics/</link>
+    <description>Recent content from Moza Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    
+    <managingEditor>zahirmohamed687@gmail.com (Mohamed Zahir)</managingEditor>
+    <webMaster>zahirmohamed687@gmail.com (Mohamed Zahir)</webMaster>
+    
+    <copyright>All articles on this blog are licensed under the BY-NC-SA license agreement unless otherwise stated. Please indicate the source when reprinting!</copyright>
+    
+    
+    <atom:link href="http://localhost:1313/tags/forensics/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+    
+
+    <item>
+      <title>Oh My Grub root-me</title>
+      <link>http://localhost:1313/post/2025/2025-03-11-rootme-ohmygrub/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+      <author>zahirmohamed687@gmail.com (Mohamed Zahir)</author>
+      <guid>http://localhost:1313/post/2025/2025-03-11-rootme-ohmygrub/</guid>
+      <description>
+        <![CDATA[<h1>Oh My Grub root-me</h1><p>Author: Mohamed Zahir(zahirmohamed687@gmail.com)</p>
+        
+          <h1 id="analyzing-an-ova-file-to-retrieve-login-credentials">
+<a class="header-anchor" href="#analyzing-an-ova-file-to-retrieve-login-credentials"></a>
+Analyzing an OVA File to Retrieve Login Credentials
+</h1><p>In this challenge, we are given an OVA (Open Virtualization Appliance) file. The goal is to analyze the file and retrieve the login credentials required to access the virtual machine. Here&rsquo;s how I approached the problem:</p>
+<hr>
+<h2 id="step-1-extracting-files-from-the-ova-file">
+<a class="header-anchor" href="#step-1-extracting-files-from-the-ova-file"></a>
+Step 1: Extracting Files from the OVA File
+</h2><p>The OVA file is essentially a tarball, so we can extract its contents using the <code>tar</code> command:</p>
+        
+        <hr><p>Published on 0001-01-01 at <a href='http://localhost:1313/'>Moza Blog</a>, last modified on 0001-01-01</p>]]>
+      </description>
+      
+        <category>ctf</category>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>Master kee root-me</title>
+      <link>http://localhost:1313/post/2025/2025-03-16-rootme-masterkee/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
+      <author>zahirmohamed687@gmail.com (Mohamed Zahir)</author>
+      <guid>http://localhost:1313/post/2025/2025-03-16-rootme-masterkee/</guid>
+      <description>
+        <![CDATA[<h1>Master kee root-me</h1><p>Author: Mohamed Zahir(zahirmohamed687@gmail.com)</p>
+        
+          <h1 id="cracking-the-masterkee-challenge-exploiting-cve-2023-32784">
+<a class="header-anchor" href="#cracking-the-masterkee-challenge-exploiting-cve-2023-32784"></a>
+Cracking the MasterKee Challenge: Exploiting CVE-2023-32784
+</h1><p>For this challenge, we are provided with two files:</p>
+<ul>
+<li><code>MasterKee.DMP</code></li>
+<li><code>Masterkee.kdbx</code></li>
+</ul>
+<p>The goal is to extract the password from the <code>.DMP</code> file and use it to unlock the KeePass database (<code>Masterkee.kdbx</code>). After some research, I discovered that a specific version of KeePass is vulnerable to <strong>CVE-2023-32784</strong>, which allows extracting the master password from a memory dump.</p>
+<hr>
+<h2 id="step-1-understanding-the-vulnerability">
+<a class="header-anchor" href="#step-1-understanding-the-vulnerability"></a>
+Step 1: Understanding the Vulnerability
+</h2><p>CVE-2023-32784 is a vulnerability in KeePass that leaks portions of the master password in memory. By analyzing a memory dump (<code>.DMP</code>), we can recover parts of the password. The missing characters are represented as <code>●</code> in the output.</p>
+        
+        <hr><p>Published on 0001-01-01 at <a href='http://localhost:1313/'>Moza Blog</a>, last modified on 0001-01-01</p>]]>
+      </description>
+      
+        <category>ctf</category>
+      
+    </item>
+    
+  </channel>
+</rss>
