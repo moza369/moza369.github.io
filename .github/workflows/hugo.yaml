@@ -1,4 +1,4 @@
-name: "Build and Deploy Hugo"
+  name: "Build and Deploy Hugo"
 on:
   push:
     branches:
@@ -25,7 +25,7 @@ jobs:
           fetch-depth: 0
 
       - name: Setup Hugo
-        uses: actions/hugo-setup@v3
+        uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
           extended: true         # Required for your blue-themed SCSS
