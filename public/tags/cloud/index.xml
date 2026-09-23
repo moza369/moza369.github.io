@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cloud on MOZA</title><link>https://moza369.github.io/tags/cloud/</link><description>Recent content in Cloud on MOZA</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 01 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://moza369.github.io/tags/cloud/index.xml" rel="self" type="application/rss+xml"/><item><title>CampusVoice</title><link>https://moza369.github.io/projects/campusvoice/</link><pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate><guid>https://moza369.github.io/projects/campusvoice/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;CampusVoice&lt;/strong&gt; is a secure, anonymized feedback collection platform built for universities. It allows students to submit honest evaluations of courses and instructors without any login, while providing professors and administrators with actionable insights through a protected dashboard.&lt;/p&gt;
+&lt;p&gt;Built as a &lt;strong&gt;Cloud Computing mini-project&lt;/strong&gt; for the Master&amp;rsquo;s program in AI &amp;amp; Emerging Technologies at FPN Nador.&lt;/p&gt;
+&lt;h2 id="key-features"&gt;Key Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Anonymous Student Submissions&lt;/strong&gt; — No login required, anonymity-first design&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Role-Based Access Control&lt;/strong&gt; — Separate interfaces for students, professors, and administrators&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Real-time Dashboard&lt;/strong&gt; — Filter, analyze, and export feedback data as CSV&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Anti-Spam&lt;/strong&gt; — One feedback per professor per day per IP, rate limiting (5 attempts / 60s)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cloud-Native&lt;/strong&gt; — Deployed on Microsoft Azure (PaaS architecture)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="architecture"&gt;Architecture&lt;/h2&gt;
+&lt;p&gt;A 3-tier design:&lt;/p&gt;</description></item></channel></rss>

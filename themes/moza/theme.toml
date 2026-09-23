@@ -1,0 +1,9 @@
+name = 'moza'
+license = 'MIT'
+description = 'A clean, professional Hugo theme for cybersecurity blogs'
+homepage = 'https://github.com/moza369/moza369.github.io'
+tags = ['blog', 'cybersecurity', 'portfolio', 'responsive', 'dark-light']
+min_version = '0.124.0'
+
+[author]
+  name = 'MOZA'

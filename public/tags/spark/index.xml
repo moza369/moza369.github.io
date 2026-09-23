@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Spark on MOZA</title><link>https://moza369.github.io/tags/spark/</link><description>Recent content in Spark on MOZA</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 15 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://moza369.github.io/tags/spark/index.xml" rel="self" type="application/rss+xml"/><item><title>Customer Segmentation</title><link>https://moza369.github.io/projects/customer-segmentation/</link><pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate><guid>https://moza369.github.io/projects/customer-segmentation/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;A Big Data project focused on e-commerce customer segmentation.&lt;/p&gt;
+&lt;p&gt;The project explores distributed data processing and machine-learning workflows using technologies from the Hadoop/Spark ecosystem.&lt;/p&gt;
+&lt;h2 id="technology-stack"&gt;Technology Stack&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Apache Spark&lt;/li&gt;
+&lt;li&gt;PySpark&lt;/li&gt;
+&lt;li&gt;Spark ML&lt;/li&gt;
+&lt;li&gt;Apache Kafka&lt;/li&gt;
+&lt;li&gt;Python&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

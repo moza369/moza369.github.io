@@ -1,0 +1,95 @@
+baseURL = 'https://moza369.github.io/'
+languageCode = 'en-us'
+title = 'MOZA'
+theme = 'moza'
+
+# Pagination
+[pagination]
+  pagerSize = 12
+
+# Taxonomies
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+
+# Markup configuration
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    noClasses = false
+    style = 'github'
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+    ordered = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# Output formats
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+
+# Menu
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 1
+  [[menus.main]]
+    name = 'Research'
+    pageRef = '/research/'
+    weight = 2
+  [[menus.main]]
+    name = 'CTFs'
+    pageRef = '/ctfs/'
+    weight = 3
+  [[menus.main]]
+    name = 'Projects'
+    pageRef = '/projects/'
+    weight = 4
+  [[menus.main]]
+    name = 'Writeups'
+    pageRef = '/writeups/'
+    weight = 5
+  [[menus.main]]
+    name = 'Achievements'
+    pageRef = '/achievements/'
+    weight = 6
+  [[menus.main]]
+    name = 'About'
+    pageRef = '/about/'
+    weight = 7
+
+# Site params
+[params]
+  description = 'Cybersecurity • AI Engineering • Security Research'
+  author = 'MOZA'
+  authorFullName = 'Mohamed Zahir'
+  email = 'zahirmohamed687@gmail.com'
+  mainSections = ['writeups', 'research', 'ctfs']
+  hero_title = 'Mohamed Zahir'
+  hero_subtitle = 'Cybersecurity • AI Engineering • Security Research'
+  hero_desc = "I'm Mohamed Zahir, a cybersecurity enthusiast and AI engineering student focused on offensive security, web application security, and the intersection between artificial intelligence and cybersecurity. I build, break, research, and document things — from web security vulnerabilities and bug bounty research to machine learning and AI projects."
+
+  [params.social]
+    github = 'https://github.com/moza369'
+    twitter = 'https://x.com/M0ZA369'
+    linkedin = 'https://www.linkedin.com/in/mohamed-zahir-24b607295'
+
+# Related content
+[related]
+  threshold = 80
+  includeNewer = true
+  toLower = true
+  [[related.indices]]
+    name = 'categories'
+    weight = 100
+  [[related.indices]]
+    name = 'tags'
+    weight = 80
+  [[related.indices]]
+    name = 'date'
+    weight = 10

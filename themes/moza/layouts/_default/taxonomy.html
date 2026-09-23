@@ -1,0 +1,31 @@
+{{ define "main" }}
+<div class="list-page">
+  <div class="section-inner">
+    <header class="list-header">
+      <h1 class="list-title">{{ .Title }}</h1>
+      <span class="list-count">{{ len .Pages }} {{ if eq (len .Pages) 1 }}article{{ else }}articles{{ end }}</span>
+    </header>
+
+    <div class="article-grid">
+      {{ $paginator := .Paginate .Pages 12 }}
+      {{ range $paginator.Pages }}
+        {{ partial "article-card.html" . }}
+      {{ end }}
+    </div>
+
+    {{ if gt $paginator.TotalPages 1 }}
+    <nav class="pagination">
+      {{ if $paginator.HasPrev }}
+      <a href="{{ $paginator.Prev.URL }}" class="page-link">&laquo; Prev</a>
+      {{ end }}
+      {{ range $paginator.Pagers }}
+      <a href="{{ .URL }}" class="page-link{{ if eq . $.Paginator }} active{{ end }}">{{ .PageNumber }}</a>
+      {{ end }}
+      {{ if $paginator.HasNext }}
+      <a href="{{ $paginator.Next.URL }}" class="page-link">Next &raquo;</a>
+      {{ end }}
+    </nav>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

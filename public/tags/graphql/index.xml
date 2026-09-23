@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Graphql on MOZA</title><link>https://moza369.github.io/tags/graphql/</link><description>Recent content in Graphql on MOZA</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 10 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://moza369.github.io/tags/graphql/index.xml" rel="self" type="application/rss+xml"/><item><title>BugForge – Ottergram</title><link>https://moza369.github.io/ctfs/bugforge-ottergram/</link><pubDate>Sat, 10 Jan 2026 00:00:00 +0000</pubDate><guid>https://moza369.github.io/ctfs/bugforge-ottergram/</guid><description>&lt;h2 id="challenge-info"&gt;Challenge Info&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Challenge Name:&lt;/strong&gt; Ottergram&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Platform:&lt;/strong&gt; bugforge&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Category:&lt;/strong&gt; Web&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Difficulty:&lt;/strong&gt; Easy&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Points:&lt;/strong&gt; 10&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hint:&lt;/strong&gt; &lt;code&gt;GraphQL&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="challenge-overview"&gt;Challenge Overview&lt;/h2&gt;
+&lt;p&gt;The challenge provides a web application called &lt;strong&gt;Ottergram&lt;/strong&gt;. The given hint strongly suggests that the vulnerability lies within a &lt;strong&gt;GraphQL endpoint&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The application scope allows access to all paths under:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;https://&amp;lt;lab-id&amp;gt;.labs-app.bugforge.io/*
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src="https://moza369.github.io/images/challenges/bugforge/ottergram/main-page.png" alt="Main Page"&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="initial-reconnaissance"&gt;Initial Reconnaissance&lt;/h2&gt;
+&lt;p&gt;While exploring the application, I tested common GraphQL endpoints and discovered that the following endpoint was accessible:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/graphql&lt;/code&gt;&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jwt on MOZA</title><link>https://moza369.github.io/tags/jwt/</link><description>Recent content in Jwt on MOZA</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 09 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://moza369.github.io/tags/jwt/index.xml" rel="self" type="application/rss+xml"/><item><title>BugForge – Shady Oaks Financial</title><link>https://moza369.github.io/ctfs/bugforge-shady_oaks_financial/</link><pubDate>Fri, 09 Jan 2026 00:00:00 +0000</pubDate><guid>https://moza369.github.io/ctfs/bugforge-shady_oaks_financial/</guid><description>&lt;h2 id="challenge-info"&gt;Challenge Info&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Challenge Name:&lt;/strong&gt; Shady Oaks Financial&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Platform:&lt;/strong&gt; bugforge&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Category:&lt;/strong&gt; Web&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Difficulty:&lt;/strong&gt; Easy&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Points:&lt;/strong&gt; 10&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id="overview"&gt;Overview&lt;/h1&gt;
+&lt;p&gt;The &lt;strong&gt;Shady Oaks Financial&lt;/strong&gt; application provides a login and registration page.
+After registering a normal user account, the application issues a &lt;strong&gt;JWT token&lt;/strong&gt; that is stored in the browser.&lt;/p&gt;
+&lt;p&gt;The goal of this challenge is to escalate privileges and gain &lt;strong&gt;admin access&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="initial-access"&gt;Initial Access&lt;/h2&gt;
+&lt;p&gt;We begin by creating a normal user account using the registration page and logging in successfully.&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Rev on MOZA</title><link>https://moza369.github.io/tags/rev/</link><description>Recent content in Rev on MOZA</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 12 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://moza369.github.io/tags/rev/index.xml" rel="self" type="application/rss+xml"/><item><title>N7 CTF – CTF Writeups</title><link>https://moza369.github.io/ctfs/n7-ctf-2024/</link><pubDate>Sun, 12 May 2024 00:00:00 +0000</pubDate><guid>https://moza369.github.io/ctfs/n7-ctf-2024/</guid><description>&lt;h1 id="n7-ctf"&gt;N7 CTF&lt;/h1&gt;
+&lt;p&gt;The &lt;strong&gt;N7 CTF&lt;/strong&gt; was a Capture The Flag competition featuring challenges from several categories, including &lt;strong&gt;Web, Cryptography, Steganography, and Reverse Engineering&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;In this writeup, I will cover the challenges I solved and explain the techniques used to obtain each flag.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="cryptography"&gt;Cryptography&lt;/h2&gt;
+&lt;h3 id="challenge-1--custom-encryption"&gt;Challenge 1 — Custom Encryption&lt;/h3&gt;
+&lt;h5 id="challenge-overview"&gt;Challenge Overview&lt;/h5&gt;
+&lt;p&gt;For the first crypto challenge, we were given two Python files:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;message.py&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;output.py&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The first step was to inspect the encryption algorithm.&lt;/p&gt;</description></item></channel></rss>

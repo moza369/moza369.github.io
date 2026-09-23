@@ -1,0 +1,16 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-info">
+      <p class="footer-name">{{ .Site.Params.authorFullName | default .Site.Params.author }}</p>
+      <p class="footer-desc">{{ .Site.Params.description }}</p>
+      <p class="footer-tagline">Building, breaking, learning, and documenting.</p>
+    </div>
+    <div class="footer-links">
+      {{ with .Site.Params.social.github }}<a href="{{ . }}" target="_blank" rel="noopener">GitHub</a>{{ end }}
+      {{ with .Site.Params.social.linkedin }}<a href="{{ . }}" target="_blank" rel="noopener">LinkedIn</a>{{ end }}
+      {{ with .Site.Params.social.twitter }}<a href="{{ . }}" target="_blank" rel="noopener">X / Twitter</a>{{ end }}
+      <a href="{{ "index.xml" | absURL }}" target="_blank" rel="noopener">RSS</a>
+    </div>
+    <p class="footer-copy">&copy; {{ now.Format "2006" }} {{ .Site.Params.authorFullName | default .Site.Params.author }}</p>
+  </div>
+</footer>

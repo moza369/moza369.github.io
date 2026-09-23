@@ -1,0 +1,134 @@
+{{ define "main" }}
+<!-- Reading Progress Bar -->
+<div class="reading-progress" id="reading-progress"></div>
+
+<article class="article">
+  <header class="article-header">
+    {{ with .GetTerms "categories" }}
+    <a href="{{ (index . 0).Permalink }}" class="article-category-badge">{{ (index . 0).LinkTitle }}</a>
+    {{ end }}
+    <h1 class="article-title">{{ .Title }}</h1>
+    {{ with .Description }}
+    <p class="article-desc">{{ . }}</p>
+    {{ end }}
+    <div class="article-meta">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan 2006" }}</time>
+      {{ if and .Lastmod (not (.Lastmod.Equal .Date)) }}
+      <span class="meta-sep">&middot;</span>
+      <span>Updated {{ .Lastmod.Format "2 Jan 2006" }}</span>
+      {{ end }}
+      <span class="meta-sep">&middot;</span>
+      <span>{{ .ReadingTime }} min read</span>
+      <span class="meta-sep">&middot;</span>
+      <span>{{ .Params.author | default .Site.Params.author }}</span>
+    </div>
+    {{ with .GetTerms "tags" }}
+    <div class="article-tags">
+      {{ range . }}
+      <a href="{{ .Permalink }}" class="tag">{{ .LinkTitle }}</a>
+      {{ end }}
+    </div>
+    {{ end }}
+  </header>
+
+  {{ $image := .Params.image | default .Params.cover }}
+  {{ with $image }}
+  <div class="article-cover">
+    <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy">
+  </div>
+  {{ end }}
+
+  <div class="article-wrapper">
+    <div class="article-content">
+      {{ .Content }}
+    </div>
+
+    {{ if ne .Params.toc false }}
+    {{ with .TableOfContents }}
+    <aside class="article-toc" id="article-toc">
+      <div class="toc-container">
+        <h2 class="toc-title">Table of Contents</h2>
+        {{ . }}
+      </div>
+    </aside>
+    {{ end }}
+    {{ end }}
+  </div>
+
+  <!-- Share Buttons -->
+  <div class="article-share">
+    <div class="section-inner">
+      <span class="share-label">Share this article</span>
+      <div class="share-buttons">
+        <a href="https://twitter.com/intent/tweet?text={{ .Title | urlquery }}&url={{ .Permalink | urlquery }}" target="_blank" rel="noopener" class="share-btn share-twitter" aria-label="Share on X">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink | urlquery }}" target="_blank" rel="noopener" class="share-btn share-linkedin" aria-label="Share on LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <button class="share-btn share-copy" id="share-copy-btn" aria-label="Copy link" data-url="{{ .Permalink }}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="article-footer">
+    {{ with .GetTerms "tags" }}
+    <div class="article-footer-tags">
+      {{ range . }}
+      <a href="{{ .Permalink }}" class="tag">{{ .LinkTitle }}</a>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    <nav class="article-nav">
+      {{ with .PrevInSection }}
+      <a href="{{ .RelPermalink }}" class="article-nav-link article-nav-prev">
+        <span class="article-nav-label">← Previous</span>
+        <span class="article-nav-title">{{ .Title }}</span>
+      </a>
+      {{ end }}
+      {{ with .NextInSection }}
+      <a href="{{ .RelPermalink }}" class="article-nav-link article-nav-next">
+        <span class="article-nav-label">Next →</span>
+        <span class="article-nav-title">{{ .Title }}</span>
+      </a>
+      {{ end }}
+    </nav>
+
+    <!-- Giscus Comments -->
+    <section class="article-comments" id="comments">
+      <h3>Comments</h3>
+      <script src="https://giscus.app/client.js"
+        data-repo="moza369/moza369.github.io"
+        data-repo-id="R_kgDOLpG1gw"
+        data-category="General"
+        data-category-id="DIC_kwDOLpG1g84DDiiQ"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+      </script>
+    </section>
+
+    {{ $related := .Site.RegularPages.Related . | first 3 }}
+    {{ with $related }}
+    <section class="related-posts">
+      <h3>Related Articles</h3>
+      <div class="article-grid">
+        {{ range . }}
+        {{ partial "article-card.html" . }}
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
+  </footer>
+</article>
+{{ end }}

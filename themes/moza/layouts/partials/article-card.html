@@ -1,0 +1,26 @@
+<article class="article-card">
+  {{ $image := .Params.image | default .Params.cover }}
+  {{ with $image }}
+  <a href="{{ $.RelPermalink }}" class="article-card-image">
+    <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy">
+  </a>
+  {{ end }}
+  <div class="article-card-body">
+    {{ with .GetTerms "categories" }}
+    <a href="{{ (index . 0).Permalink }}" class="article-card-category">{{ (index . 0).LinkTitle }}</a>
+    {{ end }}
+    <h3 class="article-card-title">
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </h3>
+    {{ with .Description }}
+    <p class="article-card-desc">{{ . }}</p>
+    {{ else }}
+    <p class="article-card-desc">{{ .Summary | plainify | truncate 150 }}</p>
+    {{ end }}
+    <div class="article-card-meta">
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan 2006" }}</time>
+      <span class="meta-sep">&middot;</span>
+      <span>{{ .ReadingTime }} min read</span>
+    </div>
+  </div>
+</article>

@@ -1,0 +1,25 @@
+<div class="achievement-card">
+  {{ $image := .Params.image | default .Params.badge }}
+  {{ with $image }}
+  <div class="achievement-badge">
+    <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy">
+  </div>
+  {{ end }}
+  <div class="achievement-info">
+    <h3 class="achievement-title">{{ .Title }}</h3>
+    {{ with .Params.issuer }}
+    <p class="achievement-issuer">{{ . }}</p>
+    {{ end }}
+    {{ with .Description }}
+    <p class="achievement-desc">{{ . }}</p>
+    {{ end }}
+    <div class="achievement-meta">
+      {{ with .Params.date_earned }}
+      <span class="achievement-date">{{ . }}</span>
+      {{ end }}
+      {{ with .Params.credential_url }}
+      <a href="{{ . }}" target="_blank" rel="noopener" class="achievement-link">View credential →</a>
+      {{ end }}
+    </div>
+  </div>
+</div>

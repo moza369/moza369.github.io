@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Verb-Tampering on MOZA</title><link>https://moza369.github.io/tags/verb-tampering/</link><description>Recent content in Verb-Tampering on MOZA</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 03 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://moza369.github.io/tags/verb-tampering/index.xml" rel="self" type="application/rss+xml"/><item><title>Unauthenticated Admin API Access via HTTP Verb Tampering — Ferrero</title><link>https://moza369.github.io/writeups/unauth-admin-api-access/</link><pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate><guid>https://moza369.github.io/writeups/unauth-admin-api-access/</guid><description>&lt;h2 id="summary"&gt;Summary&lt;/h2&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Detail&lt;/th&gt;
+ &lt;th&gt;Value&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Target&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Ferrero&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Weakness&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Improper Authorization + HTTP Verb Tampering&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Severity&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Critical&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Reports&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;2 related findings&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Status&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;Resolved&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Platform&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;HackerOne&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="the-story"&gt;The Story&lt;/h2&gt;
+&lt;p&gt;It started with the Wayback Machine.&lt;/p&gt;
+&lt;p&gt;While mapping a Ferrero application, I threw the wildcard scope into the Web Archive CDX API:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;https://web.archive.org/cdx/search/cdx?url=*.example.com&amp;amp;output=text&amp;amp;fl=original&amp;amp;collapse=urlkey
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Among the archived URLs, a few interesting endpoints caught my eye:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;/Dtts3s/winners
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;/Dtts3s/valid
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;/Dtts3s/list
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;These looked like admin panel routes for managing a promotional campaign. I hit them with GET requests — nothing. The frontend redirected or returned empty responses. The UI routes appeared protected.&lt;/p&gt;</description></item></channel></rss>
