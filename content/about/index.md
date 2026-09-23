@@ -14,7 +14,7 @@ I'm **Mohamed Zahir**, a cybersecurity enthusiast and software engineer with a s
 
 My background is in **software engineering**, and over time my work and learning have increasingly centered around cybersecurity. I enjoy understanding how systems and applications work, looking for ways they can fail, and investigating those weaknesses from an attacker's perspective.
 
-My main focus is **offensive security**, especially web application security and vulnerability research. I also have hands-on exposure to areas such as **Active Directory and Android security**, and I'm continuing to expand my practical experience across different attack surfaces.
+My work sits at the intersection of **Artificial Intelligence** and **cybersecurity**. I am interested in building AI systems and understanding how they can be attacked, secured, and tested. My work covers *machine learning*, *Generative AI*, *LLM security*, *offensive security*, *web/API* security and security research.
 
 Alongside cybersecurity, I'm currently pursuing a **Master's in Artificial Intelligence and Emerging Technologies (MIATE)** at the Faculty Polydisciplinaire de Nador, Université Mohammed 1er Oujda.
 
