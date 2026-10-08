@@ -65,14 +65,14 @@ theme = 'moza'
 
 # Site params
 [params]
-  description = 'Cybersecurity • AI Engineering • Security Research'
+  description = 'AI Engineering • Generative AI • AI Security'
   author = 'MOZA'
   authorFullName = 'Mohamed Zahir'
   email = 'zahirmohamed687@gmail.com'
   mainSections = ['writeups', 'research', 'ctfs']
   hero_title = 'Mohamed Zahir'
-  hero_subtitle = 'Cybersecurity • AI Engineering • Security Research'
-  hero_desc = "I'm Mohamed Zahir, a cybersecurity enthusiast and AI engineering student focused on offensive security, web application security, and the intersection between artificial intelligence and cybersecurity. I build, break, research, and document things — from web security vulnerabilities and bug bounty research to machine learning and AI projects."
+  hero_subtitle = 'AI Engineering • Generative AI • AI Security'
+  hero_desc = "I'm Mohamed Zahir, a Master's student in Artificial Intelligence and Emerging Technologies focused on AI Engineering, Generative AI, and secure AI systems. I build practical AI and machine-learning projects while exploring how AI-powered applications can be tested and secured. I document my projects, experiments, research, and technical learning here."
 
   [params.social]
     github = 'https://github.com/moza369'
