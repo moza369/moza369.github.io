@@ -96,7 +96,7 @@ This blog is part of that process. It is not intended to be a collection of poli
     <div class="timeline-dot"></div>
     <div class="timeline-content">
       <h3>Master's — Artificial Intelligence and Emerging Technologies (MIATE)</h3>
-      <p class="timeline-meta">Faculty Polydisciplinaire de Nador · Université Mohammed 1er Oujda</p>
+      <p class="timeline-meta">Faculty of Applied Sciences of Nador · Université Mohammed 1er Oujda</p>
       <p class="timeline-desc">Currently pursuing a Master's focused on artificial intelligence and emerging technologies, with practical work in machine learning, computer vision, and AI engineering.</p>
     </div>
   </div>
