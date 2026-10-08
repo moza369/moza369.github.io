@@ -1,41 +1,41 @@
 ---
 title: "About"
-description: "About MOZA — Cybersecurity researcher, AI student, and technical writer"
+description: "About Mohamed Zahir — AI Engineering student focused on Generative AI and AI Security"
 date: 2024-01-01
 layout: "about"
 name: "Mohamed Zahir"
 handle: "@M0ZA369"
-role: "Cybersecurity • AI Engineering • Security Research"
+role: "AI Engineering • Generative AI • AI Security"
 ---
 
-## Who am I?
+I'm **Mohamed Zahir**, a Master's student in Artificial Intelligence and Emerging Technologies with a software engineering background and hands-on experience in cybersecurity.
 
-I'm **Mohamed Zahir**, a cybersecurity enthusiast and software engineer with a strong interest in offensive security, vulnerability research, and artificial intelligence.
+My current focus is **AI Engineering**, particularly Machine Learning, Deep Learning, Generative AI, and the development of practical AI applications.
 
-My background is in **software engineering**, and over time my work and learning have increasingly centered around cybersecurity. I enjoy understanding how systems and applications work, looking for ways they can fail, and investigating those weaknesses from an attacker's perspective.
+I'm also interested in **AI Security**, where I combine my AI studies with my cybersecurity background to explore the security of LLM-based and AI-powered applications.
 
-My work sits at the intersection of **Artificial Intelligence** and **cybersecurity**. I am interested in building AI systems and understanding how they can be attacked, secured, and tested. My work covers *machine learning*, *Generative AI*, *LLM security*, *offensive security*, *web/API* security and security research.
-
-Alongside cybersecurity, I'm currently pursuing a **Master's in Artificial Intelligence and Emerging Technologies (MIATE)** at the Faculty Polydisciplinaire de Nador, Université Mohammed 1er Oujda.
-
-This has given me the opportunity to work with machine learning, computer vision, Big Data, cloud technologies, and other areas of AI engineering.
+I learn primarily by building, experimenting, and documenting what I discover.
 
 ## What I do
 
 <div class="about-cards">
   <div class="about-card">
-    <h3>🔐 Offensive Security</h3>
-    <p>Web application security, vulnerability research, bug bounty hunting, penetration testing, API security, authentication & authorization issues, XSS and injection vulnerabilities, reconnaissance and attack-surface discovery, active Directory security, android security.</p>
+    <h3>🤖 AI Engineering</h3>
+    <p>Machine Learning, Deep Learning, Computer Vision, Generative AI, LLM applications, and practical AI systems.</p>
   </div>
   <div class="about-card">
-    <h3>🤖 Artificial Intelligence</h3>
-    <p>Machine learning, deep learning, computer vision, data processing, AI engineering, AI security, LLM security, prompt injection, security of AI-powered applications and agents.</p>
+    <h3>🔐 AI Security</h3>
+    <p>LLM security, prompt injection, RAG security, agent security, and secure AI applications.</p>
+  </div>
+  <div class="about-card">
+    <h3>🛡️ Cybersecurity Background</h3>
+    <p>Web/API security, penetration testing, vulnerability research, CTFs, and security automation.</p>
   </div>
 </div>
 
 ## My approach
 
-I like learning by building and breaking things. When I encounter a technology or security concept, I prefer to understand it through practical experimentation, labs, projects, CTFs, vulnerability research, and real-world applications.
+I like learning by building and testing things. When I encounter a technology or technical concept, I prefer to understand it through practical experimentation, labs, projects, and real-world applications.
 
 This blog is part of that process. It is not intended to be a collection of polished tutorials only. It is also a record of experiments, discoveries, mistakes, and lessons learned.
 
@@ -43,67 +43,48 @@ This blog is part of that process. It is not intended to be a collection of poli
 
 <div class="skills-group">
   <div class="skill-category">
-    <h4>Security</h4>
-    <div class="skill-tags">
-      <span class="skill-tag">Web App Security</span>
-      <span class="skill-tag">Vulnerability Research</span>
-      <span class="skill-tag">Bug Bounty</span>
-      <span class="skill-tag">Penetration Testing</span>
-      <span class="skill-tag">API Security</span>
-      <span class="skill-tag">Reconnaissance</span>
-      <span class="skill-tag">Active Directory</span>
-      <span class="skill-tag">Android Security</span>
-      <span class="skill-tag">CTFs</span>
-    </div>
-  </div>
-  <div class="skill-category">
-    <h4>Tools</h4>
-    <div class="skill-tags">
-      <span class="skill-tag">Burp Suite</span>
-      <span class="skill-tag">Caido</span>
-      <span class="skill-tag">OWASP ZAP</span>
-      <span class="skill-tag">Nuclei</span>
-      <span class="skill-tag">Amass</span>
-      <span class="skill-tag">Subfinder</span>
-      <span class="skill-tag">Assetfinder</span>
-      <span class="skill-tag">GAU</span>
-      <span class="skill-tag">Shuffledns</span>
-      <span class="skill-tag">And way more Tools...</span>
-    </div>
-  </div>
-  <div class="skill-category">
-    <h4>Programming</h4>
+    <h4>AI</h4>
     <div class="skill-tags">
       <span class="skill-tag">Python</span>
-      <span class="skill-tag">JavaScript</span>
-      <span class="skill-tag">Bash</span>
-      <span class="skill-tag">SQL</span>
-      <span class="skill-tag">PHP</span>
-      <span class="skill-tag">Java</span>
-    </div>
-  </div>
-  <div class="skill-category">
-    <h4>AI & Data</h4>
-    <div class="skill-tags">
       <span class="skill-tag">Machine Learning</span>
-      <span class="skill-tag">scikit-learn</span>
-      <span class="skill-tag">Computer Vision</span>
       <span class="skill-tag">Deep Learning</span>
-      <span class="skill-tag">NumPy</span>
-      <span class="skill-tag">Apache Spark</span>
-      <span class="skill-tag">PySpark</span>
-      <span class="skill-tag">Kafka</span>
+      <span class="skill-tag">Scikit-learn</span>
+      <span class="skill-tag">PyTorch</span>
+      <span class="skill-tag">TensorFlow</span>
+      <span class="skill-tag">Computer Vision</span>
+      <span class="skill-tag">Generative AI</span>
+      <span class="skill-tag">Transformers</span>
+      <span class="skill-tag">LLMs</span>
     </div>
   </div>
   <div class="skill-category">
-    <h4>Systems & Cloud</h4>
+    <h4>Engineering</h4>
     <div class="skill-tags">
-      <span class="skill-tag">Linux</span>
+      <span class="skill-tag">NumPy</span>
+      <span class="skill-tag">Pandas</span>
+      <span class="skill-tag">SQL</span>
       <span class="skill-tag">Git</span>
       <span class="skill-tag">Docker</span>
-      <span class="skill-tag">Microsoft Azure</span>
-      <span class="skill-tag">MongoDB</span>
-      <span class="skill-tag">Neo4j</span>
+      <span class="skill-tag">Linux</span>
+      <span class="skill-tag">Azure</span>
+    </div>
+  </div>
+  <div class="skill-category">
+    <h4>AI Security</h4>
+    <div class="skill-tags">
+      <span class="skill-tag">LLM Security</span>
+      <span class="skill-tag">Prompt Injection</span>
+      <span class="skill-tag">RAG Security</span>
+      <span class="skill-tag">Agent Security</span>
+    </div>
+  </div>
+  <div class="skill-category">
+    <h4>Cybersecurity</h4>
+    <div class="skill-tags">
+      <span class="skill-tag">Web/API Security</span>
+      <span class="skill-tag">Penetration Testing</span>
+      <span class="skill-tag">Vulnerability Research</span>
+      <span class="skill-tag">Security Automation</span>
     </div>
   </div>
 </div>
@@ -116,7 +97,7 @@ This blog is part of that process. It is not intended to be a collection of poli
     <div class="timeline-content">
       <h3>Master's — Artificial Intelligence and Emerging Technologies (MIATE)</h3>
       <p class="timeline-meta">Faculty Polydisciplinaire de Nador · Université Mohammed 1er Oujda</p>
-      <p class="timeline-desc">Currently pursuing a Master's focused on artificial intelligence and emerging technologies, with practical work involving machine learning, computer vision, Big Data, cloud computing, and AI engineering.</p>
+      <p class="timeline-desc">Currently pursuing a Master's focused on artificial intelligence and emerging technologies, with practical work in machine learning, computer vision, and AI engineering.</p>
     </div>
   </div>
   <div class="timeline-item">
@@ -124,7 +105,7 @@ This blog is part of that process. It is not intended to be a collection of poli
     <div class="timeline-content">
       <h3>Licence Sciences et Techniques — Génie logiciel</h3>
       <p class="timeline-meta">Faculty of Sciences and Technology of Errachidia</p>
-      <p class="timeline-desc">Academic background in software engineering, programming, databases, web development, and software development.</p>
+      <p class="timeline-desc">Software engineering foundation — programming, databases, web development, and software architecture.</p>
     </div>
   </div>
 </div>
@@ -141,11 +122,4 @@ As I continued developing my skills, I expanded beyond web security and started 
 
 I later chose to pursue a Master's in **Artificial Intelligence and Emerging Technologies (MIATE),** adding machine learning, computer vision, Big Data, cloud computing, and AI engineering to my technical background.
 
-Today, I continue working across both **cybersecurity and AI**, with offensive security remaining my main area of interest and AI becoming an additional technical direction that I'm actively developing.
-
-## Selected achievements
-
-- HackerOne security disclosures
-- Multiple documented web-security vulnerabilities
-- Practical AI/ML and Big Data projects
-- Security automation and reconnaissance tooling
+Today, my primary direction is **AI Engineering and Generative AI**, while my cybersecurity background continues to shape my interest in **AI Security** and secure AI systems.
