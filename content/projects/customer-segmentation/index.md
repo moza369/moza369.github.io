@@ -1,6 +1,6 @@
 ---
 title: "E-commerce Customer Segmentation — Big Data & Machine Learning"
-description: "A Big Data project using Apache Spark and PySpark to analyze e-commerce transactions and segment customers through RFM analysis."
+description: "A Big Data project using Apache Spark and PySpark to analyze e-commerce transactions, engineer RFM features, and segment customers through machine learning. It compares K-Means and Agglomerative Clustering using squared Euclidean silhouette scores and demonstrates transaction enrichment with Kafka and Spark Structured Streaming."
 date: 2026-01-15
 categories: [Projects]
 tags: [spark, pyspark, kafka, big-data, machine-learning]
@@ -34,14 +34,18 @@ The streaming pipeline enriches transactions with the existing segmentation; it 
 
 ## Model comparison
 
-K-Means achieved the stronger result in the algorithm comparison:
+K-Means and Agglomerative Clustering (Ward linkage) were compared using two clusters and the same standardized RFM features, with the silhouette score calculated using squared Euclidean distance (`sqeuclidean`).
 
 | Algorithm | Clusters | Silhouette score |
 |---|---:|---:|
-| K-Means | 2 | 0.4340 |
-| Agglomerative Clustering (Ward) | 2 | 0.3933 |
+| K-Means | 2 | **0.6238** |
+| Agglomerative Clustering (Ward) | 2 | 0.5567 |
 
-The Spark MLlib model-selection step evaluated K-Means for K values from 2 to 8. K = 2 produced the highest Spark silhouette score among the tested values, at 0.6238, so the two-cluster K-Means solution was selected.
+K-Means achieved the higher silhouette score and was selected for the final customer segmentation.
+
+The Spark MLlib model-selection step also evaluated K-Means for K values from 2 to 8. K = 2 achieved the highest silhouette score among the tested values, at 0.6238.
+
+Both evaluation steps use squared Euclidean distance. The K-Means model-selection score is calculated with Spark MLlib, while the algorithm-comparison scores are calculated with scikit-learn.
 
 ## Customer profiles
 
