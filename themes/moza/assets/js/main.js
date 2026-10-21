@@ -307,7 +307,6 @@ document.addEventListener('DOMContentLoaded', () => {
     '.cert-item',
     '.project-page .project-header',
     '.project-page .project-cover',
-    '.project-page .project-content',
     '.list-header',
     '.article-header',
     '.article-cover',

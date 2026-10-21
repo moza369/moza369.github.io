@@ -121,22 +121,22 @@ The backend also exposes `GET /api/health`, which returns a simple status respon
 ## Interface
 
 <figure>
-  <img src="images/localmind-preview.png" alt="LocalMind AI main chat interface">
+  <img src="/projects/localmind-ai/images/localmind-preview.png" alt="LocalMind AI main chat interface">
   <figcaption>LocalMind AI main interface.</figcaption>
 </figure>
 
 <figure>
-  <img src="images/text-chat.png" alt="LocalMind AI text chat interaction">
+  <img src="/projects/localmind-ai/images/text-chat.png" alt="LocalMind AI text chat interaction">
   <figcaption>Text chat through the local assistant interface.</figcaption>
 </figure>
 
 <figure>
-  <img src="images/image-analysis.png" alt="LocalMind AI image analysis interface">
+  <img src="/projects/localmind-ai/images/image-analysis.png" alt="LocalMind AI image analysis interface">
   <figcaption>Image analysis workflow.</figcaption>
 </figure>
 
 <figure>
-  <img src="images/audio-input.png" alt="LocalMind AI audio input interface">
+  <img src="/projects/localmind-ai/images/audio-input.png" alt="LocalMind AI audio input interface">
   <figcaption>Audio input and transcription workflow.</figcaption>
 </figure>
 
