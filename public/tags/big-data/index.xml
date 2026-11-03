@@ -9,11 +9,11 @@
     <lastBuildDate>Thu, 15 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/big-data/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Customer Segmentation</title>
+      <title>E-commerce Customer Segmentation — Big Data &amp; Machine Learning</title>
       <link>http://localhost:1313/projects/customer-segmentation/</link>
       <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/customer-segmentation/</guid>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;A Big Data project focused on e-commerce customer segmentation.&lt;/p&gt;&#xA;&lt;p&gt;The project explores distributed data processing and machine-learning workflows using technologies from the Hadoop/Spark ecosystem.&lt;/p&gt;&#xA;&lt;h2 id=&#34;technology-stack&#34;&gt;Technology Stack&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Apache Spark&lt;/li&gt;&#xA;&lt;li&gt;PySpark&lt;/li&gt;&#xA;&lt;li&gt;Spark ML&lt;/li&gt;&#xA;&lt;li&gt;Apache Kafka&lt;/li&gt;&#xA;&lt;li&gt;Python&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;This project applies Big Data processing and machine learning to e-commerce transaction data. It builds customer-level features with RFM analysis, compares clustering approaches, and demonstrates how incoming transactions can be associated with previously computed customer segments.&lt;/p&gt;&#xA;&lt;p&gt;The implementation uses Apache Spark and PySpark for distributed processing, Spark MLlib for K-Means clustering, and Kafka with Spark Structured Streaming for transaction enrichment.&lt;/p&gt;&#xA;&lt;h2 id=&#34;workflow&#34;&gt;Workflow&lt;/h2&gt;&#xA;&lt;p&gt;The project follows an end-to-end customer segmentation workflow:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

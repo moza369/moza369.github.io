@@ -2,21 +2,21 @@
 <html lang="en-us" data-theme="light">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Customer Segmentation | MOZA</title>
-<meta name="description" content="A Big Data project focused on e-commerce customer segmentation using distributed data processing and machine-learning workflows.">
+<title>E-commerce Customer Segmentation — Big Data &amp; Machine Learning | MOZA</title>
+<meta name="description" content="A Big Data project using Apache Spark and PySpark to analyze e-commerce transactions, engineer RFM features, and segment customers through machine learning. It compares K-Means and Agglomerative Clustering using squared Euclidean silhouette scores and demonstrates transaction enrichment with Kafka and Spark Structured Streaming.">
 <link rel="canonical" href="http://localhost:1313/projects/customer-segmentation/">
 
 
-<meta property="og:title" content="Customer Segmentation">
-<meta property="og:description" content="A Big Data project focused on e-commerce customer segmentation using distributed data processing and machine-learning workflows.">
+<meta property="og:title" content="E-commerce Customer Segmentation — Big Data &amp; Machine Learning">
+<meta property="og:description" content="A Big Data project using Apache Spark and PySpark to analyze e-commerce transactions, engineer RFM features, and segment customers through machine learning. It compares K-Means and Agglomerative Clustering using squared Euclidean silhouette scores and demonstrates transaction enrichment with Kafka and Spark Structured Streaming.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://localhost:1313/projects/customer-segmentation/">
 
 
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Customer Segmentation">
-<meta name="twitter:description" content="A Big Data project focused on e-commerce customer segmentation using distributed data processing and machine-learning workflows.">
+<meta name="twitter:title" content="E-commerce Customer Segmentation — Big Data &amp; Machine Learning">
+<meta name="twitter:description" content="A Big Data project using Apache Spark and PySpark to analyze e-commerce transactions, engineer RFM features, and segment customers through machine learning. It compares K-Means and Agglomerative Clustering using squared Euclidean silhouette scores and demonstrates transaction enrichment with Kafka and Spark Structured Streaming.">
 
 
 
@@ -27,7 +27,7 @@
 
 
 
-<link rel="stylesheet" href="/css/main.min.ae42ac9070d53ebb9ef4caf4fc4e795e916945240a620c9d9794f1baf4a85911.css" integrity="sha256-rkKskHDVPrue9Mr0/E55XpFpRSQKYgydl5TxuvSoWRE=">
+<link rel="stylesheet" href="/css/main.min.251fb7b056288067de1334cc7d6525d2f8717c0bd2042a7f88d1122ec10a1fe0.css" integrity="sha256-JR&#43;3sFYogGfeEzTMfWUl0vhxfAvSBCp/iNESLsEKH&#43;A=">
 
 
 
@@ -92,30 +92,39 @@
   <div class="section-inner">
     <header class="project-header">
       
-      <span class="project-status project-status-in-development">In Development</span>
+      <span class="project-status project-status-completed">Completed</span>
       
-      <h1 class="project-title">Customer Segmentation</h1>
+      <h1 class="project-title">E-commerce Customer Segmentation — Big Data &amp; Machine Learning</h1>
       
-      <p class="project-desc">A Big Data project focused on e-commerce customer segmentation using distributed data processing and machine-learning workflows.</p>
+      <p class="project-desc">A Big Data project using Apache Spark and PySpark to analyze e-commerce transactions, engineer RFM features, and segment customers through machine learning. It compares K-Means and Agglomerative Clustering using squared Euclidean silhouette scores and demonstrates transaction enrichment with Kafka and Spark Structured Streaming.</p>
       
 
       
       <div class="project-tech">
         
+        <span class="tech-tag">Python</span>
+        
         <span class="tech-tag">Apache Spark</span>
         
         <span class="tech-tag">PySpark</span>
         
-        <span class="tech-tag">Spark ML</span>
+        <span class="tech-tag">Spark MLlib</span>
         
         <span class="tech-tag">Kafka</span>
         
-        <span class="tech-tag">Python</span>
+        <span class="tech-tag">Docker</span>
+        
+        <span class="tech-tag">Jupyter</span>
         
       </div>
       
 
       <div class="project-links">
+        
+        <a href="https://github.com/moza369/ecommerce-customer-segmentation-big-data" target="_blank" rel="noopener" class="project-action-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View Source
+        </a>
         
         
       </div>
@@ -126,15 +135,109 @@
 
     <div class="project-content article-content">
       <h2 id="overview">Overview</h2>
-<p>A Big Data project focused on e-commerce customer segmentation.</p>
-<p>The project explores distributed data processing and machine-learning workflows using technologies from the Hadoop/Spark ecosystem.</p>
+<p>This project applies Big Data processing and machine learning to e-commerce transaction data. It builds customer-level features with RFM analysis, compares clustering approaches, and demonstrates how incoming transactions can be associated with previously computed customer segments.</p>
+<p>The implementation uses Apache Spark and PySpark for distributed processing, Spark MLlib for K-Means clustering, and Kafka with Spark Structured Streaming for transaction enrichment.</p>
+<h2 id="workflow">Workflow</h2>
+<p>The project follows an end-to-end customer segmentation workflow:</p>
+<ol>
+<li>Load and explore the Online Retail dataset.</li>
+<li>Clean the transaction data by removing duplicates, missing customer IDs, cancellations, and non-positive quantities or prices.</li>
+<li>Calculate transaction revenue and aggregate customer-level Recency, Frequency, and Monetary (RFM) features.</li>
+<li>Apply log transformations, assemble the feature vector, and standardize the RFM data.</li>
+<li>Evaluate K-Means clustering for values of K from 2 through 8.</li>
+<li>Compare K-Means with Agglomerative Clustering using silhouette scores on the same standardized features.</li>
+<li>Save the selected customer segmentation as Parquet for downstream use.</li>
+<li>Consume JSON transactions from Kafka and associate recognized customers with their saved segment using Spark Structured Streaming.</li>
+</ol>
+<p>The streaming pipeline enriches transactions with the existing segmentation; it does not retrain the clustering model.</p>
+<h2 id="model-comparison">Model comparison</h2>
+<p>K-Means and Agglomerative Clustering (Ward linkage) were compared using two clusters and the same standardized RFM features, with the silhouette score calculated using squared Euclidean distance (<code>sqeuclidean</code>).</p>
+<table>
+  <thead>
+      <tr>
+          <th>Algorithm</th>
+          <th style="text-align: right">Clusters</th>
+          <th style="text-align: right">Silhouette score</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>K-Means</td>
+          <td style="text-align: right">2</td>
+          <td style="text-align: right"><strong>0.6238</strong></td>
+      </tr>
+      <tr>
+          <td>Agglomerative Clustering (Ward)</td>
+          <td style="text-align: right">2</td>
+          <td style="text-align: right">0.5567</td>
+      </tr>
+  </tbody>
+</table>
+<p>K-Means achieved the higher silhouette score and was selected for the final customer segmentation.</p>
+<p>The Spark MLlib model-selection step also evaluated K-Means for K values from 2 to 8. K = 2 achieved the highest silhouette score among the tested values, at 0.6238.</p>
+<p>Both evaluation steps use squared Euclidean distance. The K-Means model-selection score is calculated with Spark MLlib, while the algorithm-comparison scores are calculated with scikit-learn.</p>
+<h2 id="customer-profiles">Customer profiles</h2>
+<p>The selected segmentation produces two descriptive customer profiles:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Cluster</th>
+          <th style="text-align: right">Customers</th>
+          <th style="text-align: right">Share</th>
+          <th style="text-align: right">Average recency (days)</th>
+          <th style="text-align: right">Average frequency (invoices)</th>
+          <th style="text-align: right">Average monetary value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>0</td>
+          <td style="text-align: right">1,654</td>
+          <td style="text-align: right">38.13%</td>
+          <td style="text-align: right">25.39</td>
+          <td style="text-align: right">8.49</td>
+          <td style="text-align: right">4,566.18</td>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td style="text-align: right">2,684</td>
+          <td style="text-align: right">61.87%</td>
+          <td style="text-align: right">133.15</td>
+          <td style="text-align: right">1.68</td>
+          <td style="text-align: right">497.30</td>
+      </tr>
+  </tbody>
+</table>
+<p>Cluster 0 represents customers with more recent purchases and higher average purchase frequency and monetary value. Cluster 1 represents customers with less recent purchases and lower average frequency and monetary value.</p>
+<h2 id="batch-and-stream-processing">Batch and stream processing</h2>
+<h3 id="batch-processing">Batch processing</h3>
+<p>The batch pipeline uses Spark DataFrames and RFM feature engineering to create the customer representation, train and compare clustering models, inspect customer profiles, and save the selected segmentation to Parquet.</p>
+<h3 id="stream-processing">Stream processing</h3>
+<p>Kafka receives JSON transaction events on the <code>customer-transactions</code> topic. Spark Structured Streaming reads these events and joins recognized customers with the saved segmentation so each transaction can be associated with its existing cluster. Unknown customers may have no assigned cluster.</p>
+<h2 id="infrastructure">Infrastructure</h2>
+<p>The project runs with Docker Compose and Jupyter:</p>
+<ul>
+<li><strong>Docker Compose</strong> provides the project services.</li>
+<li><strong>Jupyter</strong> provides the notebook-based development environment.</li>
+<li><strong>Apache Spark</strong> handles distributed batch processing and Structured Streaming.</li>
+<li><strong>Apache Kafka</strong> provides the transaction event stream.</li>
+</ul>
+<h2 id="dataset">Dataset</h2>
+<p>The project uses the <a href="https://archive.ics.uci.edu/dataset/352/online%2Bretail">Online Retail dataset from the UCI Machine Learning Repository</a>.</p>
+<p>The original dataset contains 541,909 rows. After cleaning, the project reports approximately 392,692 valid transactions, 4,338 customers, 18,532 invoices, and 3,665 products.</p>
 <h2 id="technology-stack">Technology Stack</h2>
 <ul>
+<li>Python</li>
 <li>Apache Spark</li>
 <li>PySpark</li>
-<li>Spark ML</li>
+<li>Spark SQL</li>
+<li>Spark MLlib</li>
 <li>Apache Kafka</li>
-<li>Python</li>
+<li>Spark Structured Streaming</li>
+<li>K-Means and Agglomerative Clustering</li>
+<li>RFM analysis</li>
+<li>Docker Compose</li>
+<li>Jupyter</li>
 </ul>
 
     </div>
@@ -195,6 +298,6 @@
   </div>
 
   
-  <script src="/js/main.min.e8f8203abbcad1f3fa122b09fe793104762a88d15d67609e82a6083a5abf38ab.js" defer></script>
+  <script src="/js/main.min.78f8f2a769522f9b733096553a65eed27648c8a5533d44f2ee1086fe06dad918.js" defer></script>
 </body>
 </html>

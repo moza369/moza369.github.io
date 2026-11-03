@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ollama on MOZA</title>
+    <link>http://localhost:1313/tags/ollama/</link>
+    <description>Recent content in Ollama on MOZA</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ollama/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LocalMind AI: A Local Multimodal AI Assistant</title>
+      <link>http://localhost:1313/projects/localmind-ai/</link>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/localmind-ai/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/moza369/localmind-ai&#34;&gt;LocalMind AI&lt;/a&gt; is a local-first multimodal AI assistant developed as an academic project with a teammate under the supervision of &lt;strong&gt;Anas Charroud&lt;/strong&gt;. The application brings text interaction, image analysis, and audio input together in a browser-based interface.&lt;/p&gt;&#xA;&lt;p&gt;The project explores how a web application can connect users to locally hosted AI models without relying on a remote model API for the core inference workflow. A FastAPI backend serves the interface and coordinates requests, Ollama runs the local vision-language model, and Whisper handles audio transcription.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

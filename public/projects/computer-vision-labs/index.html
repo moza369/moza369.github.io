@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en-us" data-theme="light">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Computer Vision Labs: OCR, Object Detection, Segmentation and Generative AI | MOZA</title>
+<meta name="description" content="Three practical computer vision experiments covering OCR preprocessing, object detection and segmentation, relative depth estimation, and AI-powered interior redesign.">
+<link rel="canonical" href="http://localhost:1313/projects/computer-vision-labs/">
+
+
+<meta property="og:title" content="Computer Vision Labs: OCR, Object Detection, Segmentation and Generative AI">
+<meta property="og:description" content="Three practical computer vision experiments covering OCR preprocessing, object detection and segmentation, relative depth estimation, and AI-powered interior redesign.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://localhost:1313/projects/computer-vision-labs/">
+
+<meta property="og:image" content="http://localhost:1313/projects/computer-vision-labs/images/scene-detected-segmented.png">
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Computer Vision Labs: OCR, Object Detection, Segmentation and Generative AI">
+<meta name="twitter:description" content="Three practical computer vision experiments covering OCR preprocessing, object detection and segmentation, relative depth estimation, and AI-powered interior redesign.">
+
+<meta name="twitter:image" content="http://localhost:1313/projects/computer-vision-labs/images/scene-detected-segmented.png">
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+
+
+
+<link rel="stylesheet" href="/css/main.min.251fb7b056288067de1334cc7d6525d2f8717c0bd2042a7f88d1122ec10a1fe0.css" integrity="sha256-JR&#43;3sFYogGfeEzTMfWUl0vhxfAvSBCp/iNESLsEKH&#43;A=">
+
+
+
+
+<link rel="icon" href="/favicon.ico">
+
+
+<meta name="generator" content="Hugo 0.155.2">
+</head>
+<body><header class="site-header">
+  <div class="header-inner">
+    <a href="http://localhost:1313/" class="site-logo">MOZA</a>
+    <nav class="site-nav">
+      <ul class="nav-links">
+        
+        <li>
+          <a href="/" class="nav-link">Home</a>
+        </li>
+        
+        <li>
+          <a href="/research/" class="nav-link">Research</a>
+        </li>
+        
+        <li>
+          <a href="/ctfs/" class="nav-link">CTFs</a>
+        </li>
+        
+        <li>
+          <a href="/projects/" class="nav-link active">Projects</a>
+        </li>
+        
+        <li>
+          <a href="/writeups/" class="nav-link">Writeups</a>
+        </li>
+        
+        <li>
+          <a href="/achievements/" class="nav-link">Achievements</a>
+        </li>
+        
+        <li>
+          <a href="/about/" class="nav-link">About</a>
+        </li>
+        
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button class="search-btn" id="search-btn" aria-label="Search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      </button>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<main class="site-main">
+<div class="project-page">
+  <div class="section-inner">
+    <header class="project-header">
+      
+      <span class="project-status project-status-completed">Completed</span>
+      
+      <h1 class="project-title">Computer Vision Labs: OCR, Object Detection, Segmentation and Generative AI</h1>
+      
+      <p class="project-desc">Three practical computer vision experiments covering OCR preprocessing, object detection and segmentation, relative depth estimation, and AI-powered interior redesign.</p>
+      
+
+      
+      <div class="project-tech">
+        
+        <span class="tech-tag">Python</span>
+        
+        <span class="tech-tag">OpenCV</span>
+        
+        <span class="tech-tag">Tesseract OCR</span>
+        
+        <span class="tech-tag">Grounding DINO</span>
+        
+        <span class="tech-tag">Segment Anything (SAM)</span>
+        
+        <span class="tech-tag">Depth Anything</span>
+        
+        <span class="tech-tag">Stable Diffusion</span>
+        
+        <span class="tech-tag">ControlNet</span>
+        
+      </div>
+      
+
+      <div class="project-links">
+        
+        <a href="https://github.com/moza369/computer-vision-labs" target="_blank" rel="noopener" class="project-action-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          View Source
+        </a>
+        
+        
+      </div>
+    </header>
+
+    
+    
+    <div class="project-cover">
+      <img src="/projects/computer-vision-labs/images/scene-detected-segmented.png" alt="Computer Vision Labs: OCR, Object Detection, Segmentation and Generative AI" loading="lazy">
+    </div>
+    
+
+    <div class="project-content article-content">
+      <h2 id="overview">Overview</h2>
+<p><a href="https://github.com/moza369/computer-vision-labs">Computer Vision Labs</a> is a collection of three practical experiments in computer vision and generative AI. The project combines image preprocessing, pretrained vision models, and diffusion-based generation to solve different tasks with separate workflows.</p>
+<p>The labs cover:</p>
+<ol>
+<li>OCR with image preprocessing</li>
+<li>Object detection, segmentation, and relative depth estimation</li>
+<li>AI-powered interior redesign</li>
+</ol>
+<h2 id="1-ocr-and-image-preprocessing">1. OCR and Image Preprocessing</h2>
+<p>The first lab uses OpenCV and Tesseract OCR to extract text from a noisy image. The workflow improves the input before OCR rather than sending the raw image directly to Tesseract.</p>
+<h3 id="workflow">Workflow</h3>
+<ul>
+<li>Convert the image to grayscale.</li>
+<li>Reduce noise with filtering.</li>
+<li>Apply thresholding to separate text from the background.</li>
+<li>Use morphology where needed to clean small artifacts.</li>
+<li>Resize and pad the image before OCR.</li>
+<li>Extract text with Tesseract through Python.</li>
+</ul>
+<table>
+<tr>
+<td>
+<figure>
+  <img src="images/ocr-original.png" alt="Original OCR input image before preprocessing">
+  <figcaption>Original OCR input image.</figcaption>
+</figure>
+</td>
+<td>
+<figure>
+  <img src="images/ocr-processed.png" alt="Processed OCR image after grayscale conversion, denoising, thresholding, and padding">
+  <figcaption>Processed OCR image used for text extraction.</figcaption>
+</figure>
+</td>
+</tr>
+</table>
+<p>This lab shows how OCR quality depends heavily on preprocessing. The result improves after cleaning the image, but text recognition still depends on the clarity of the source image.</p>
+<p><strong>Technologies used:</strong> Python, OpenCV, Tesseract OCR, <code>pytesseract</code>.</p>
+<h2 id="2-object-detection-segmentation-and-relative-depth-estimation">2. Object Detection, Segmentation, and Relative Depth Estimation</h2>
+<p>The second lab combines three pretrained vision models to analyze a real-world scene:</p>
+<ul>
+<li><strong>Grounding DINO</strong> for text-prompt object detection</li>
+<li><strong>Segment Anything (SAM)</strong> for instance segmentation</li>
+<li><strong>Depth Anything</strong> for relative depth estimation</li>
+</ul>
+<h3 id="workflow-1">Workflow</h3>
+<ol>
+<li>Load a scene image.</li>
+<li>Run text-prompted detection with Grounding DINO.</li>
+<li>Use SAM to generate segmentation masks for the detected objects.</li>
+<li>Estimate relative depth for the scene with Depth Anything.</li>
+<li>Visualize the outputs together for comparison.</li>
+</ol>
+<table>
+<tr>
+<td>
+<figure>
+  <img src="images/scene-input.jpg" alt="Original street scene used as input for detection, segmentation, and depth estimation">
+  <figcaption>Input scene for detection and segmentation.</figcaption>
+</figure>
+</td>
+<td>
+<figure>
+  <img src="images/scene-detected-segmented.png" alt="Scene with detected objects highlighted and segmented using Grounding DINO and SAM">
+  <figcaption>Detection and segmentation result.</figcaption>
+</figure>
+</td>
+<td>
+<figure>
+  <img src="images/scene-depth-map.png" alt="Relative depth map estimated from the street scene by Depth Anything">
+  <figcaption>Estimated relative depth map.</figcaption>
+</figure>
+</td>
+</tr>
+</table>
+<p>The depth map is a model estimate of relative depth, not calibrated physical distance. It is useful for visualization and scene understanding, but it should not be treated as a metric depth measurement.</p>
+<p><strong>Technologies used:</strong> Python, PyTorch, Grounding DINO, SAM, Depth Anything, Transformers.</p>
+<h2 id="3-ai-powered-interior-redesign">3. AI-Powered Interior Redesign</h2>
+<p>The third lab explores image-to-image generation for redesigning a bedroom using Stable Diffusion, Hugging Face Diffusers, and ControlNet.</p>
+<h3 id="workflow-2">Workflow</h3>
+<ol>
+<li>Load the original room image.</li>
+<li>Extract structural guidance from the room layout.</li>
+<li>Define prompts for the desired redesign.</li>
+<li>Generate a new interior using Stable Diffusion through Diffusers.</li>
+<li>Apply ControlNet to guide the output with the original structure.</li>
+<li>Compare the original room with the generated redesign.</li>
+</ol>
+<table>
+<tr>
+<td>
+<figure>
+  <img src="images/interior-original.jpg" alt="Original bedroom image used for AI-powered interior redesign">
+  <figcaption>Original bedroom image.</figcaption>
+</figure>
+</td>
+<td>
+<figure>
+  <img src="images/interior-comparison.png" alt="Side-by-side comparison of the original bedroom and the AI-generated redesign">
+  <figcaption>Before-and-after comparison.</figcaption>
+</figure>
+</td>
+</tr>
+</table>
+<figure>
+  <img src="images/interior-generated.png" alt="AI-generated bedroom redesign created with Stable Diffusion and ControlNet">
+  <figcaption>Generated bedroom redesign.</figcaption>
+</figure>
+<p>ControlNet helps preserve the room structure, but it does not guarantee exact preservation of every wall, window, or furniture element. The output is a guided redesign, not a perfect reconstruction.</p>
+<p><strong>Technologies used:</strong> Python, PyTorch, OpenCV, Hugging Face Diffusers, Stable Diffusion, ControlNet.</p>
+<h2 id="challenges-and-limitations">Challenges and Limitations</h2>
+<ul>
+<li>OCR results depend on the input image quality and the chosen preprocessing steps.</li>
+<li>Detection and segmentation depend on model checkpoints, prompts, and scene composition.</li>
+<li>The depth map is relative and visual, not calibrated in physical units.</li>
+<li>The interior redesign is structurally guided, but the generated image can still alter details from the source room.</li>
+<li>Some of the demonstration images came from Google Images, so original sources and applicable licenses should be checked where possible.</li>
+</ul>
+<h2 id="what-i-learned">What I Learned</h2>
+<ul>
+<li>How preprocessing choices affect OCR output.</li>
+<li>How to combine object detection and segmentation in one workflow.</li>
+<li>How to interpret relative depth maps without overreading them as real-world measurements.</li>
+<li>How to guide diffusion models with ControlNet for controlled image generation.</li>
+<li>How to combine classical computer vision, pretrained models, and generative AI in a single Python project.</li>
+</ul>
+<h2 id="image-credits">Image Credits</h2>
+<p>Some input images used in these educational demonstrations were found through Google Images. Google Images is a search engine, not the original image host. Where possible, original sources and applicable licenses should be checked before reuse. The generated outputs in this project were produced as part of the experiments documented here.</p>
+<h2 id="repository">Repository</h2>
+<p>The full notebooks and example outputs are available here:</p>
+<ul>
+<li><a href="https://github.com/moza369/computer-vision-labs">View Computer Vision Labs on GitHub</a></li>
+</ul>
+
+    </div>
+  </div>
+</div>
+
+  </main><footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-info">
+      <p class="footer-name">Mohamed Zahir</p>
+      <p class="footer-desc">AI Engineering • Generative AI • AI Security</p>
+      <p class="footer-tagline">Building, breaking, learning, and documenting.</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/moza369" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/mohamed-zahir-24b607295" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://x.com/M0ZA369" target="_blank" rel="noopener">X / Twitter</a>
+      <a href="http://localhost:1313/index.xml" target="_blank" rel="noopener">RSS</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 Mohamed Zahir</p>
+  </div>
+</footer>
+
+  <div class="search-overlay" id="search-overlay">
+    <div class="search-modal">
+      <div class="search-header">
+        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" class="search-input" id="search-input" placeholder="Search articles..." autocomplete="off">
+        <button class="search-close" id="search-close" aria-label="Close search">&times;</button>
+      </div>
+      <div class="search-results" id="search-results">
+        <p class="search-placeholder">Type to search...</p>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="mobile-menu" id="mobile-menu">
+    <nav>
+      <ul class="mobile-nav-links">
+        
+        <li><a href="/" class="mobile-nav-link">Home</a></li>
+        
+        <li><a href="/research/" class="mobile-nav-link">Research</a></li>
+        
+        <li><a href="/ctfs/" class="mobile-nav-link">CTFs</a></li>
+        
+        <li><a href="/projects/" class="mobile-nav-link">Projects</a></li>
+        
+        <li><a href="/writeups/" class="mobile-nav-link">Writeups</a></li>
+        
+        <li><a href="/achievements/" class="mobile-nav-link">Achievements</a></li>
+        
+        <li><a href="/about/" class="mobile-nav-link">About</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+
+  
+  <script src="/js/main.min.78f8f2a769522f9b733096553a65eed27648c8a5533d44f2ee1086fe06dad918.js" defer></script>
+</body>
+</html>

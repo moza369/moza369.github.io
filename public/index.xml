@@ -6,8 +6,29 @@
     <description>Recent content on MOZA</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Autonomous Vehicle Perception System</title>
+      <link>http://localhost:1313/projects/autonomous-vehicle-perception/</link>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/autonomous-vehicle-perception/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/moza369/Autonomous-Vehicle-Perception&#34;&gt;Autonomous Vehicle Perception&lt;/a&gt; is a group project developed for the &lt;strong&gt;Master MIATE Computer Vision&lt;/strong&gt; course. It combines nine perception scenarios in one Tkinter application that can process video files, images, or a live camera depending on the selected scenario.&lt;/p&gt;&#xA;&lt;p&gt;The repository describes the result as a &lt;strong&gt;final integrated university prototype&lt;/strong&gt;. I served as the team leader and repository maintainer, coordinating the shared repository structure and integration while the scenarios were developed collaboratively by the team. This article focuses on the final &lt;code&gt;main&lt;/code&gt; branch and does not claim that I personally implemented every detector.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>LocalMind AI: A Local Multimodal AI Assistant</title>
+      <link>http://localhost:1313/projects/localmind-ai/</link>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/localmind-ai/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/moza369/localmind-ai&#34;&gt;LocalMind AI&lt;/a&gt; is a local-first multimodal AI assistant developed as an academic project with a teammate under the supervision of &lt;strong&gt;Anas Charroud&lt;/strong&gt;. The application brings text interaction, image analysis, and audio input together in a browser-based interface.&lt;/p&gt;&#xA;&lt;p&gt;The project explores how a web application can connect users to locally hosted AI models without relying on a remote model API for the core inference workflow. A FastAPI backend serves the interface and coordinates requests, Ollama runs the local vision-language model, and Whisper handles audio transcription.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Computer Vision Labs: OCR, Object Detection, Segmentation and Generative AI</title>
+      <link>http://localhost:1313/projects/computer-vision-labs/</link>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/computer-vision-labs/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/moza369/computer-vision-labs&#34;&gt;Computer Vision Labs&lt;/a&gt; is a collection of three practical experiments in computer vision and generative AI. The project combines image preprocessing, pretrained vision models, and diffusion-based generation to solve different tasks with separate workflows.&lt;/p&gt;&#xA;&lt;p&gt;The labs cover:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;OCR with image preprocessing&lt;/li&gt;&#xA;&lt;li&gt;Object detection, segmentation, and relative depth estimation&lt;/li&gt;&#xA;&lt;li&gt;AI-powered interior redesign&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;1-ocr-and-image-preprocessing&#34;&gt;1. OCR and Image Preprocessing&lt;/h2&gt;&#xA;&lt;p&gt;The first lab uses OpenCV and Tesseract OCR to extract text from a noisy image. The workflow improves the input before OCR rather than sending the raw image directly to Tesseract.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Unauthenticated SQL Injection via WordPress 0day — Mars (Royal Canin)</title>
       <link>http://localhost:1313/writeups/rce-wordpress-unauthenticated/</link>
@@ -30,13 +51,6 @@
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;Ciora is a &lt;strong&gt;Bash-based recon automation tool&lt;/strong&gt; built for bug bounty hunters and pentesters. It downloads the &lt;strong&gt;HackerOne program scope&lt;/strong&gt; (public or private with session cookie), extracts web assets &amp;amp; wildcards, and optionally performs &lt;strong&gt;subdomain enumeration&lt;/strong&gt; using multiple tools.&lt;/p&gt;&#xA;&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Supports &lt;strong&gt;public &amp;amp; private HackerOne programs&lt;/strong&gt; (cookie auth for private)&lt;/li&gt;&#xA;&lt;li&gt;Automatically extracts:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Web assets&lt;/li&gt;&#xA;&lt;li&gt;Wildcards&lt;/li&gt;&#xA;&lt;li&gt;Cleaned wildcard domains&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Subdomain enumeration with:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Amass&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Sublist3r&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Assetfinder&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Subfinder&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;ShuffleDNS&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Merges results into one file (&lt;code&gt;all_subdomains.txt&lt;/code&gt;)&lt;/li&gt;&#xA;&lt;li&gt;Pretty banner + clean output&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;p&gt;Clone the repo and install dependencies:&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Autonomous Vehicle Perception</title>
-      <link>http://localhost:1313/projects/autonomous-vehicle-perception/</link>
-      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/autonomous-vehicle-perception/</guid>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;A computer-vision project developed as part of my Master&amp;rsquo;s studies.&lt;/p&gt;&#xA;&lt;p&gt;The project explores perception for autonomous-vehicle scenarios, including situations such as driver distraction and passenger posture.&lt;/p&gt;&#xA;&lt;h2 id=&#34;technology-stack&#34;&gt;Technology Stack&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Python&lt;/li&gt;&#xA;&lt;li&gt;Computer Vision&lt;/li&gt;&#xA;&lt;li&gt;Machine Learning&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
-    </item>
-    <item>
       <title>Unauthenticated Admin API Access via HTTP Verb Tampering </title>
       <link>http://localhost:1313/writeups/unauth-admin-api-access/</link>
       <pubDate>Tue, 03 Feb 2026 00:00:00 +0000</pubDate>
@@ -44,11 +58,11 @@
       <description>&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;Detail&lt;/th&gt;&#xA;          &lt;th&gt;Value&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Target&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;REACTED&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Weakness&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Improper Authorization + HTTP Verb Tampering&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Severity&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Critical&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Reports&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;2 related findings&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Status&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;Resolved&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;&lt;strong&gt;Platform&lt;/strong&gt;&lt;/td&gt;&#xA;          &lt;td&gt;HackerOne&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h2 id=&#34;the-story&#34;&gt;The Story&lt;/h2&gt;&#xA;&lt;p&gt;It started with the Wayback Machine.&lt;/p&gt;&#xA;&lt;p&gt;While mapping a REACTED application, I threw the wildcard scope into the Web Archive CDX API:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;https://web.archive.org/cdx/search/cdx?url=*.example.com&amp;amp;output=text&amp;amp;fl=original&amp;amp;collapse=urlkey&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Among the archived URLs, a few interesting endpoints caught my eye:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/Dtts3s/winners&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/Dtts3s/valid&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/Dtts3s/list&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;These looked like admin panel routes for managing a promotional campaign. I hit them with GET requests — nothing. The frontend redirected or returned empty responses. The UI routes appeared protected.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Customer Segmentation</title>
+      <title>E-commerce Customer Segmentation — Big Data &amp; Machine Learning</title>
       <link>http://localhost:1313/projects/customer-segmentation/</link>
       <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/customer-segmentation/</guid>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;A Big Data project focused on e-commerce customer segmentation.&lt;/p&gt;&#xA;&lt;p&gt;The project explores distributed data processing and machine-learning workflows using technologies from the Hadoop/Spark ecosystem.&lt;/p&gt;&#xA;&lt;h2 id=&#34;technology-stack&#34;&gt;Technology Stack&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Apache Spark&lt;/li&gt;&#xA;&lt;li&gt;PySpark&lt;/li&gt;&#xA;&lt;li&gt;Spark ML&lt;/li&gt;&#xA;&lt;li&gt;Apache Kafka&lt;/li&gt;&#xA;&lt;li&gt;Python&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;This project applies Big Data processing and machine learning to e-commerce transaction data. It builds customer-level features with RFM analysis, compares clustering approaches, and demonstrates how incoming transactions can be associated with previously computed customer segments.&lt;/p&gt;&#xA;&lt;p&gt;The implementation uses Apache Spark and PySpark for distributed processing, Spark MLlib for K-Means clustering, and Kafka with Spark Structured Streaming for transaction enrichment.&lt;/p&gt;&#xA;&lt;h2 id=&#34;workflow&#34;&gt;Workflow&lt;/h2&gt;&#xA;&lt;p&gt;The project follows an end-to-end customer segmentation workflow:&lt;/p&gt;</description>
     </item>
     <item>
       <title>BugForge – Tanuki</title>

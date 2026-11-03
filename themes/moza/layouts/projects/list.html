@@ -12,6 +12,12 @@
     <div class="projects-grid">
       {{ range .Pages }}
       <article class="project-card">
+        {{ $image := .Params.cover | default .Params.image }}
+        {{ with $image }}
+        <a href="{{ $.Permalink }}" class="project-card-image">
+          <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy">
+        </a>
+        {{ end }}
         <div class="project-card-body">
           <div class="project-card-header">
             <h2 class="project-card-title">

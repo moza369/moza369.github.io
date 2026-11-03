@@ -2,25 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/ai-engineering/</loc>
+    <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/autonomous-vehicle-perception/</loc>
+    <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/autonomous-vehicles/</loc>
+    <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/computer-vision/</loc>
+    <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/fastapi/</loc>
+    <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/localmind-ai/</loc>
+    <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/machine-learning/</loc>
+    <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/mediapipe/</loc>
+    <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/multimodal-ai/</loc>
+    <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ollama/</loc>
+    <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/projects/</loc>
+    <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/</loc>
+    <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/python/</loc>
+    <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ai/</loc>
+    <lastmod>2026-10-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/computer-vision-labs/</loc>
+    <lastmod>2026-10-14T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/0day/</loc>
     <lastmod>2026-07-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/bugbounty/</loc>
     <lastmod>2026-07-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-07-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-07-18T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/rce/</loc>
     <lastmod>2026-07-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/sqli/</loc>
-    <lastmod>2026-07-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-07-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/writeups/rce-wordpress-unauthenticated/</loc>
@@ -62,32 +107,11 @@
     <loc>http://localhost:1313/tags/hackerone/</loc>
     <lastmod>2026-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/projects/</loc>
-    <lastmod>2026-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/</loc>
-    <lastmod>2026-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/python/</loc>
-    <lastmod>2026-05-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/reconnaissance/</loc>
     <lastmod>2026-05-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/security/</loc>
     <lastmod>2026-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/ai/</loc>
-    <lastmod>2026-03-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/autonomous-vehicle-perception/</loc>
-    <lastmod>2026-03-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/computer-vision/</loc>
-    <lastmod>2026-03-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/machine-learning/</loc>
-    <lastmod>2026-03-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/access-control/</loc>
     <lastmod>2026-02-03T00:00:00+00:00</lastmod>

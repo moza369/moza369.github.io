@@ -6,14 +6,21 @@
     <description>Recent content in Computer-Vision on MOZA</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/computer-vision/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Autonomous Vehicle Perception</title>
+      <title>Autonomous Vehicle Perception System</title>
       <link>http://localhost:1313/projects/autonomous-vehicle-perception/</link>
-      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/autonomous-vehicle-perception/</guid>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;A computer-vision project developed as part of my Master&amp;rsquo;s studies.&lt;/p&gt;&#xA;&lt;p&gt;The project explores perception for autonomous-vehicle scenarios, including situations such as driver distraction and passenger posture.&lt;/p&gt;&#xA;&lt;h2 id=&#34;technology-stack&#34;&gt;Technology Stack&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Python&lt;/li&gt;&#xA;&lt;li&gt;Computer Vision&lt;/li&gt;&#xA;&lt;li&gt;Machine Learning&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/moza369/Autonomous-Vehicle-Perception&#34;&gt;Autonomous Vehicle Perception&lt;/a&gt; is a group project developed for the &lt;strong&gt;Master MIATE Computer Vision&lt;/strong&gt; course. It combines nine perception scenarios in one Tkinter application that can process video files, images, or a live camera depending on the selected scenario.&lt;/p&gt;&#xA;&lt;p&gt;The repository describes the result as a &lt;strong&gt;final integrated university prototype&lt;/strong&gt;. I served as the team leader and repository maintainer, coordinating the shared repository structure and integration while the scenarios were developed collaboratively by the team. This article focuses on the final &lt;code&gt;main&lt;/code&gt; branch and does not claim that I personally implemented every detector.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Computer Vision Labs: OCR, Object Detection, Segmentation and Generative AI</title>
+      <link>http://localhost:1313/projects/computer-vision-labs/</link>
+      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/computer-vision-labs/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/moza369/computer-vision-labs&#34;&gt;Computer Vision Labs&lt;/a&gt; is a collection of three practical experiments in computer vision and generative AI. The project combines image preprocessing, pretrained vision models, and diffusion-based generation to solve different tasks with separate workflows.&lt;/p&gt;&#xA;&lt;p&gt;The labs cover:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;OCR with image preprocessing&lt;/li&gt;&#xA;&lt;li&gt;Object detection, segmentation, and relative depth estimation&lt;/li&gt;&#xA;&lt;li&gt;AI-powered interior redesign&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;1-ocr-and-image-preprocessing&#34;&gt;1. OCR and Image Preprocessing&lt;/h2&gt;&#xA;&lt;p&gt;The first lab uses OpenCV and Tesseract OCR to extract text from a noisy image. The workflow improves the input before OCR rather than sending the raw image directly to Tesseract.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
